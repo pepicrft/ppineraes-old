@@ -1,20 +1,20 @@
 {
-    "editor.formatOnSave": false,
-    "[yml]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode",
-      "editor.formatOnSave": true
-    },
-    "[json]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode",
-      "editor.formatOnSave": true
-    },
-    "[svelte]": {
-        "editor.defaultFormatter": "svelte.svelte-vscode",
-        "editor.formatOnSave": true
-    },
-    "workbench.colorTheme": "Dracula Soft",
-    "files.exclude": {
-      "**/.cache/": true,
-      "**/node_modules/": true
-    }
-  }
+	"editor.formatOnSave": false,
+	"[yml]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[svelte]": {
+		"editor.defaultFormatter": "svelte.svelte-vscode",
+		"editor.formatOnSave": true
+	},
+	"workbench.colorTheme": "Dracula Soft",
+	"files.exclude": {
+		"**/.cache/": true,
+		"**/node_modules/": true
+	}
+}
