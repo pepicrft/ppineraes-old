@@ -2,7 +2,7 @@
 	"name": "craftweg",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "svelte-kit dev",
+		"dev": "env-cmd svelte-kit dev",
 		"build": "svelte-kit build",
 		"preview": "svelte-kit preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
@@ -13,12 +13,14 @@
 		"test:watch": "npm run test -- --watch"
 	},
 	"devDependencies": {
+		"@octokit/graphql": "^4.8.0",
 		"@sveltejs/adapter-netlify": "^1.0.0-next.35",
 		"@sveltejs/kit": "next",
 		"@types/jest": "^27.0.3",
 		"@typescript-eslint/eslint-plugin": "^5.4.0",
 		"@typescript-eslint/parser": "^5.4.0",
 		"babel-jest": "^27.3.1",
+		"env-cmd": "^10.1.0",
 		"eslint": "^8.2.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^3.2.1",
