@@ -14,6 +14,9 @@ export const get: RequestHandler = async (request) => {
           following {
             totalCount
           }
+          repositoriesContributedTo {
+            totalCount
+          }
         }
       }
     `,
@@ -31,7 +34,8 @@ export const get: RequestHandler = async (request) => {
   return {
     body: JSON.stringify({
       followers: user.followers.totalCount,
-      following: user.following.totalCount
+      following: user.following.totalCount,
+      repositoriesContributedTo: user.repositoriesContributedTo.totalCount
     }),
     headers,
   };
