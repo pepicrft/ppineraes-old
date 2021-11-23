@@ -38,7 +38,7 @@
 		<li><a href="/feed.xml">RSS</a></li>
 		<li>Contact</li>
 		<ul>
-			<li>pedro@craftweg.com</li>
+			<li><a href="mailto:pedro@craftweg.com" target="_blank">pedro@craftweg.com</a></li>
 		</ul>
 		<li>On the internet</li>
 		<ul>
