@@ -32,6 +32,7 @@
 
 <main class="page-content" aria-label="Content">
 	<div class="wrapper">
+		<a href="/">Back</a>
 		<slot />
 	</div>
 </main>
