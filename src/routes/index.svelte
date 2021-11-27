@@ -24,6 +24,7 @@
 		<ul>
 			<li><a href="/about">About</a></li>
 			<li><a href="/stack">Stack</a></li>
+			<li><a href="https://www.instapaper.com/p/6377648" target="_blank">Read later</a></li>
 		</ul>
 		<li>Projects</li>
 		<ul>
