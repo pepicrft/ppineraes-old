@@ -1,3 +1,14 @@
+<script context="module" lang="ts">
+    export async function load({ page: { path } }) {
+    	return { props: { path } }
+    }
+</script>
+
+<script>
+	export let path;
+	export let isNotRoot = path !== "/";
+</script>
+
 <svelte:head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -30,9 +41,11 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/purple.css" />
 </svelte:head>
 
-<main class="page-content" aria-label="Content">
+<main class="page-content" aria-label="Content">	
 	<div class="wrapper">
-		<a href="/">Back</a>
+		{#if isNotRoot}
+			<a href="/">Back</a>
+		{/if}
 		<slot />
 	</div>
 </main>
