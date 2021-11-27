@@ -1,12 +1,5 @@
-<script context="module" lang="ts">
-    export async function load({ page: { path } }) {
-    	return { props: { path } }
-    }
-</script>
-
 <script>
-	export let path;
-	export let isNotRoot = path !== "/";
+	import { page } from '$app/stores';
 </script>
 
 <svelte:head>
@@ -43,7 +36,7 @@
 
 <main class="page-content" aria-label="Content">	
 	<div class="wrapper">
-		{#if isNotRoot}
+		{#if $page.path !== "/" }
 			<a href="/">Back</a>
 		{/if}
 		<slot />

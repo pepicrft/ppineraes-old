@@ -1,3 +1,7 @@
+<script context="module">
+    export const prerender = true;
+</script>
+
 <svelte:head>
 <title>About | Craftweg</title>
 <meta name="description" content="Read more about Pedro Piñera, a Berlin-based software crafter with passion for developer tooling and open-source.">

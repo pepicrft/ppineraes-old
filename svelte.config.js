@@ -32,6 +32,9 @@ const config = {
 		prerender: {
 			crawl: true,
 			entries: [
+				"/",
+				"/about",
+				"/stack",
 				...postSlugs
 			]
 		}
