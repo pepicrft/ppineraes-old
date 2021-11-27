@@ -2,10 +2,12 @@
     export const prerender = true;
 </script>
 
-<svelte:head>
-<title>Stack | Craftweg</title>
-<meta name="description" content="This page is a compilation of all the tools that I use day-to-day in no particular order.">
-</svelte:head>
+<script>
+  import Header from "$lib/components/Header.svelte"
+</script>
+
+
+<Header title="Stack" description="This page is a compilation of all the tools that I use day-to-day in no particular order."/>
 
 # Stack
 

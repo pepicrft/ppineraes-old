@@ -2,6 +2,12 @@
 	export const prerender = true;
 </script>
 
+<script>
+	import Header from '$lib/components/Header.svelte';
+</script>
+
+<Header />
+
 <header>
 	<h1>Craftweg</h1>
 	<p>Hola 👋.</p>
