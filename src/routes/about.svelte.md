@@ -13,9 +13,7 @@ Hola 👋!
 
 It's [Pedro Piñera](https://twitter.com/pepibumur).
 I'm a software developer with a passion for developer tooling.
-I currently work at [Shopify](https://shopify.com) as a Staff Production Engineer where I build tools,
-services,
-and infrastructure for developers building mobile apps.
+I currently work at [Shopify](https://shopify.com) as a Staff Production Engineer where I work on building the tooling that third-party developers need to build for the platform.
 In my spare time,
 I created [**Tuist**](https://tuist.io), a tool to help Xcode developers overcome the challenges of building large-scale apps.
 It was certainly not my first open-source experience,
