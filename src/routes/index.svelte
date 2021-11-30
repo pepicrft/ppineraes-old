@@ -3,10 +3,14 @@
 </script>
 
 <script>
-	import Header from '$lib/components/Header.svelte';
+	import Header from '$lib/components/SEO/index.svelte';
 </script>
 
-<Header />
+<Header
+	slug="/"
+	title="Pedro Piñera's corner on the Internet"
+	metadescription="Craftweg is my life-project towards making building software a craft. Is this tiny corner in the Internet, I share my experiences, adventures, ideas, and thoughts."
+/>
 
 <header>
 	<h1>Craftweg</h1>

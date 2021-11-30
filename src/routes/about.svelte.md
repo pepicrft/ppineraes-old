@@ -2,11 +2,13 @@
     export const prerender = true;
 </script>
 <script>
-  import Header from "$lib/components/Header.svelte"
+  import Header from "$lib/components/SEO/index.svelte"
 </script>
 
-
-<Header title="About" description="Read more about Pedro Piñera, a Berlin-based software crafter with passion for developer tooling and open-source."/>
+<Header
+	slug="/"
+	title="Pedro Piñera's corner on the Internet"
+	metadescription="Read more about Pedro Piñera, a Berlin-based software crafter with passion for developer tooling and open-source."/>
 
 # About
 
