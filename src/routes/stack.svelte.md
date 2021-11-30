@@ -7,11 +7,11 @@
 </script>
 
 
-<Header title="Stack" description=""/>
 <Header
 	slug="/"
 	title="Stack"
 	metadescription="This page is a compilation of all the tools that I use day-to-day in no particular order."/>
+
   
 # Stack
 
