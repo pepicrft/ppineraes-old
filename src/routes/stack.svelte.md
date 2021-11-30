@@ -3,12 +3,16 @@
 </script>
 
 <script>
-  import Header from "$lib/components/Header.svelte"
+  import Header from "$lib/components/SEO/index.svelte"
 </script>
 
 
-<Header title="Stack" description="This page is a compilation of all the tools that I use day-to-day in no particular order."/>
-
+<Header title="Stack" description=""/>
+<Header
+	slug="/"
+	title="Stack"
+	metadescription="This page is a compilation of all the tools that I use day-to-day in no particular order."/>
+  
 # Stack
 
 This page is a compilation of all the tools that I use day-to-day in no particular order.

@@ -7,7 +7,7 @@
 
 <Header
 	slug="/"
-	title="Pedro Piñera's corner on the Internet"
+	title="About"
 	metadescription="Read more about Pedro Piñera, a Berlin-based software crafter with passion for developer tooling and open-source."/>
 
 # About
