@@ -1,7 +1,6 @@
 ---
 title: "Spain, it's not time to be reunited (yet)"
 categories: ["life"]
-layout: post
 ---
 
 As some of you might know, 

@@ -1,7 +1,6 @@
 ---
 title: Focused Xcode projects
 categories: ["tuist", "open-source"]
-layout: post
 ---
 
 A while ago,

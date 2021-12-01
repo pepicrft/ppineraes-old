@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Tuist 2.0 and next
 categories: ["tuist", "open-source"]
 ---

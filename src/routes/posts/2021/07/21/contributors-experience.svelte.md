@@ -1,7 +1,6 @@
 ---
 title: Contributors' first experience
 categories: ["open-source", "contributions"]
-layout: post
 ---
 
 When building open-source software,

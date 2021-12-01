@@ -1,5 +1,4 @@
 ---
-layout: post
 title: On not having focus
 categories: ["reflexion"]
 ---

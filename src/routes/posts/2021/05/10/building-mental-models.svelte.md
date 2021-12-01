@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Building mental models
 categories: ["buildify", "open-source"]
 ---

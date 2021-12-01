@@ -1,7 +1,6 @@
 ---
 title: Back to Jekyll
 categories: ["ruby", "jekyll", "blogging"]
-layout: post
 ---
 
 I recently changed my stand in regards to the technologies that I use when building software.

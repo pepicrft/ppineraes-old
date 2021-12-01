@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Seeking focus
 categories: ["focus", "life"]
 ---

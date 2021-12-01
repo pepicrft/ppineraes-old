@@ -1,7 +1,6 @@
 ---
 title: "Adapting to a platform"
 categories: ["netlify", "sveltekit", "deployment", "developer tooling"]
-layout: post
 ---
 
 In a simplistic way,

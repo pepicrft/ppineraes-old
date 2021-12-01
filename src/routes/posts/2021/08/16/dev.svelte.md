@@ -1,7 +1,6 @@
 ---
 title: "./dev"
 categories: ["developer tooling", "developer experience", "open source"]
-layout: post
 ---
 
 One of the things that I appreciate as a developer is having a **consistent experience across projects**.

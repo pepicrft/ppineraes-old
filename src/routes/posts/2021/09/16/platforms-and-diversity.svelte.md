@@ -1,7 +1,6 @@
 ---
 title: "Developer platforms and diversity"
 categories: ["development", "saas", "software"]
-layout: post
 ---
 
 If we think about how tech companies build products these days,

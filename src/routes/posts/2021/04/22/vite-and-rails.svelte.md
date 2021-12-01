@@ -1,5 +1,4 @@
 ---
-layout: post
 title: ViteJS and Rails
 categories: ["vite", "rails", "open-source"]
 ---

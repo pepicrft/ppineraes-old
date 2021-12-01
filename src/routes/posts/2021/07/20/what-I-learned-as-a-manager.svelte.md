@@ -1,7 +1,6 @@
 ---
 title: What I learned as a manager
 categories: ["management", "shopify", "engineering"]
-layout: post
 ---
 
 As you might know,

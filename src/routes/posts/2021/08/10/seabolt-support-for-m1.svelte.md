@@ -1,7 +1,6 @@
 ---
 title: Seabolt support for M1
 categories: ["graph databases", "neo4j", "seabolt", "open source"]
-layout: post
 ---
 
 As part of building **Chimera**,

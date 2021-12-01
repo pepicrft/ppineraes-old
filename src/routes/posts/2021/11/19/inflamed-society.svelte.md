@@ -1,7 +1,6 @@
 ---
 title: "A inflamed society"
 categories: ["social networks", "mental health"]
-layout: post
 ---
 
 The abundance of information the Internet brings, 
