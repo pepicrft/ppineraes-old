@@ -65,7 +65,7 @@ Some examples of these frameworks could be:
 
 These frameworks are also useful to avoid the boilerplate setup code that some persistence solutions require, for example CoreData.
 
-![](/assets/images/microfeatures-shared.png)
+![Shared microfeatures](/assets/images/microfeatures-shared.png)
 
 ### Backend framework
 
@@ -91,7 +91,7 @@ A **UI** framework represents a component that your application can navigate to.
 
 The example below shows two different setups. The one on the left includes everything in the same framework whereas the one on the right separates the UI layer from the backend one:
 
-![](/assets/images/microfeatures-ui.png)
+![UI microfeatures](/assets/images/microfeatures-ui.png)
 
 UI frameworks must be _navigatable_ _(i.e. the application should be able to navigate to them)_. We can achieve that by just exposing the `ViewController` but there's a more interesting approach that doesn't expose any `UIKit` component but coordinators. Before diving into the idea I'd like to share with you this talk from NSSpain about [Presenting Coordinators](https://vimeo.com/144116310) that introduces the coordinators idea and inspired me to use them for this architecture.
 
@@ -149,7 +149,7 @@ class SearchResultsCoordinator {
 
 This is an example of what the architecture would look like in an application such as [SoundCloud](https://soundcloud.com). I haven't drawn the dependencies between them but the frameworks that we'd have in each of these layers. The frameworks will vary depending on your application features but you'll probably need an `API` framework or a `Session` framework that is responsible to provide the user session to those frameworks that need it, for example `API`:
 
-![](/assets/images/microfeatures-schema.png)
+![Microfeatures schema](/assets/images/microfeatures-schema.png)
 
 # Dependencies
 

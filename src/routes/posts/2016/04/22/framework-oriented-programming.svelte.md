@@ -67,7 +67,7 @@ Defining the responsibility of a framework is not easy. Think about a Framework 
 
 > Build single purpose boxes
 
-![](/images/posts/Framework-Responsibilities.png)
+![Framework responsibilities](/images/posts/Framework-Responsibilities.png)
 
 ### 2. Vertical dependencies over horizontal
 
@@ -75,7 +75,7 @@ Design your frameworks graph as a stack with multiple layers where the applicati
 
 > Design your stack dependencies vertically
 
-![](/images/posts/Framework-Vertical.png)
+![Vertical structure](/images/posts/Framework-Vertical.png)
 
 ### 3. Lower in the stack, fewer dependencies
 
@@ -83,7 +83,7 @@ The number of external dependencies should be directly proportional with the lev
 
 > Reduce external dependencies as you go lower in the stack.
 
-![](/images/posts/Framework-External.png)
+![External dependencies](/images/posts/Framework-External.png)
 
 ### 4. One step dependencies
 
@@ -93,7 +93,7 @@ This makes replacement in the future easier. For example if you used another per
 
 > Don't expose lower dependencies to upper levels. Wrap them!
 
-![](/images/posts/Framework-OneStep.png)
+![OneStep framework](/images/posts/Framework-OneStep.png)
 
 ### 5. Internal by default
 
@@ -101,7 +101,7 @@ If you're using **Swift**, congrats :tada:, you get this for free. All component
 
 > Make framework components internal by default and make public only these needed.
 
-![](/images/posts/Framework-Internal.png)
+![Framework's internals](/images/posts/Framework-Internal.png)
 
 ### 6. Framework models
 
@@ -109,7 +109,7 @@ Each framework should implement their own models. If you share models between mu
 
 > Each framework defines its own models
 
-![](/images/posts/Framework-Models.png)
+![Framework models](/images/posts/Framework-Models.png)
 
 ### 7. Platform abstraction
 

@@ -28,8 +28,6 @@ Thanks CocoaPods! It’s super easy if you’re using CocoaPods with your projec
 
 Part of the setups including specifying in which directory the requests snapshots should be saved. It’s done via an Environment Variable that has to be defined in the application scheme as shown in the screenshot below:
 
-![image]({{config.site_url}}/images/posts/szimpla-environment-vars.png)
-
 > If for any reason you forget this step, the test will assert trying to initialize Szimpla.
 
 ## Using it with Acceptance Tests

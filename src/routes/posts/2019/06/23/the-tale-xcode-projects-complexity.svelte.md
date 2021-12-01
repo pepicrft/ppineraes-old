@@ -7,7 +7,7 @@ tags: [xcode, projects, accidental complexity, swift]
 
 The CEO of our company wants the product to have an iOS app. We embark on building it, so we start by creating the project: we open Xcode, select new project, and then Xcode dumps the following into a local directory:
 
-![](/assets/images/project-tale-1.jpg)
+![Project tale 1s](/assets/images/project-tale-1.jpg)
 
 
 What a beautiful greenfield. We click run and the simulator opens almost instantly with our app running in it. We probably don't know about many of those files that were created and the content in them but *who cares?* As long as we can compile it, it's all fine.
@@ -22,7 +22,7 @@ The time to migrate the version of **Swift** comes. We want to try the latest an
 
 It's 2019, the flying bird knows how to drop packages in projects. It flies over our project, but it's confused. It doesn't know where to drop them. *How did we end up in this situation?*
 
-![](/assets/images/project-tale-2.jpg)
+![Project tale 2](/assets/images/project-tale-2.jpg)
 
 ## Takeaways
 *Is there any part of the story that resonates with you?* It's easy end up with a lot of accidental complexity if we are not aware of the implication of each of the changes that we are adding to our projects. Xcode projects are monoliths and barely allow reusing its pieces. Complexity makes the projects hard to maintain and migrate. We can see that when developers use Xcode's feature to migrate projects. *Hast it ever worked for you?* Perhaps if it's a single-target application. We all know that one-target project is how we start but we eventually end up with many of them *(libraries, extensions, apps for other platforms)*.

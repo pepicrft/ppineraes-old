@@ -16,7 +16,7 @@ It's possible to have Swift playing with Objective-C in the same project, howeve
 
 ## Objective-C projects
 
-![](/assets/images/swiftobjc-structure.png)
+![Structure](/assets/images/swiftobjc-structure.png)
 
 If we analyzed the structure of our Objective-C projects that would be something like what you can see in the figure above. We have some libraries integrated (or not) using an external dependency manager like CocoaPods into our Objective-C code base. Everything works great, we have both in the same language and the same language features are available in both sides. **What happens when Swift appears in the scene?** We have features that are available in a language (Swift) that aren't in the other and that introduces extra communication problems that we have to face. We'll see that we can use a kind of **keywords** or Swift types that are automatically translated into the equivalent ones in Objectve-C but that in some other cases we might end up using a wrapper component that allows us to stablish the communication with these Swift components.
 
@@ -83,7 +83,7 @@ SWIFT_CLASS("_TtC9SwiftObjc18NSObjectSwiftClass")
 @end
 ```
 
-![](/assets/images/swiftobjc-alert.png)
+![Alert](/assets/images/swiftobjc-alert.png)
 
 ## What's really exposed?
 
@@ -110,7 +110,7 @@ XCode uses your product package name for the xxxxx-Swift.h file naming but repla
 
 You can subclass Objective-C classes in Swift, remember to use the **override** keyword wherever you are overriding a parent class implementation. **Swift classes cannot be subclassed in Objective-C** _(even if they are NSObject sublcass or labeled with the keyword @objc)_
 
-![](/assets/images/swiftobjc-subclass.png)
+![Subclass](/assets/images/swiftobjc-subclass.png)
 
 ```objc
 #if !defined(SWIFT_CLASS)
@@ -252,7 +252,7 @@ And something similar happens with **NSDictionaries**. They are converted into *
 
 # CocoaPods
 
-![image](https://nairteashop.org/wp-content/uploads/2013/11/CocoaPods.png)
+![CocoaPods](https://nairteashop.org/wp-content/uploads/2013/11/CocoaPods.png)
 
 You might wonder if we can use CocoaPods with our projects where we've started using Swift. **The answer is YES**, you can so far, but only using **Objective-C pods**. You can add the headers into your project _Bridging-Header.h_ file and then they will be visible in Swift.
 

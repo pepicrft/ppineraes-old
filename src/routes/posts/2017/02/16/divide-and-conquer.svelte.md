@@ -43,7 +43,7 @@ Our app was a monolith. One target with the source code, another one for the spe
 
 Inspired by other companies, and our [micro services architecture](https://developers.soundcloud.com/blog/microservices-and-the-monolith), we built a similar approach. The fact that we splitted the monolith into smaller pieces made workflows faster; developers could modify a class, or a test, and build/run the tests in a matter of seconds. We started modularizing our iOS application.
 
-![](/images/posts/monolith_to_frameworks.png)
+![From monolith to frameworks](/images/posts/monolith_to_frameworks.png)
 
 It was just the first step toward that project environment we were aiming for. Soon we noticed the fact that frameworks didn't have to talk to the existing Objective-C code base allowed teams to do pure Swift *(at least in private)*. They didn't have to deal with the bridging all the time as it was happening in the primary application target. The motivation went up; Swift was becoming real!
 
@@ -73,7 +73,7 @@ We were inspired by the components driven movement. By building your UI in compo
 
 In our previous setup, adding a like in a cell, involved changes in the cell, the presenter, the data source. The only change that is needed with the components-based approach is the UI layer. That's it!
 
-![](/images/posts/divide-components.png)
+![Divide and conquer](/images/posts/divide-components.png)
 
 ---
 

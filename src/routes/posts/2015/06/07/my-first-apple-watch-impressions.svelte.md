@@ -27,8 +27,6 @@ As a **gadgets geek** I have been playing all day with the toy. I wanted to chec
 - **Open the iPhone app to use this Watch App:** I’ve read this message in one of every three apps. We know that the Apple Watch SDK is quite limited and it forced some developers to rethink their apps for that platforms. There are some of them that didn’t do thought, and they tried to implement the same app core functionality on watch as well. I opened Shazam and the first message that I received was, please open your iPhone app to start detecting the song. Really? Do I really need a Watch App for that?. **Hardware and SDK limitations are a good reason to rethink your app’s format for Apple Watch**
 - **Messy OS interactions:** I haven’t get used to the Watch OS navigation yet. I still have some problems to show the notifications or open the glances list. I think the OS has to improve that part. Moreover when I turn my wrist, in order to activate the screen expecting any particular view, the watch resets the view hierarchy and then it shows you the dashboard again. Sometimes it freezes with a black screen blinking and thinking that you turned your wrist again.
 
-![image][image-2]
-
 ### Useful apps for Watch
 
 - **Sunrise Calendar:** It offers an app and a glance. They provide information about your next events in the calendar. I use the Glance a lot. I’m a very forgetful person and don’t check the calendar a quite often when I have it on my phone.

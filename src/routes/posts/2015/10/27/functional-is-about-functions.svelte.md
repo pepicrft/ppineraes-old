@@ -18,7 +18,7 @@ Functions is not anything new, back in the school we were told that a function i
 Notice that when we create a function we’re actually a scope of operations that doesn’t take data out of there, consequently the logic subset is constrained.
 Thinking about it the concept isn’t complex at all, but… we were given more flexibility when we were told that we could save states under something called classes, voila! OOP
 
-![](/assets/images/black-box.png)
+![Black box](/assets/images/black-box.png)
 
 ## Object oriented programming
 
@@ -74,7 +74,7 @@ Let’s analyse the problems the implementation above presents. It’s a typical
 
 - **Retain cycles:** I talked about classes as scopes for functions that have a state. When we define functions that use the object state we’re indirectly retaining that scope which means, if that function is in memory, the object that contains the function will be as well. In the example above the GCD asynchronous closure is retaining self to generate authenticated request. Until this closure gets executed ApiEntity is going to be retained by two entities. If for any reason the closure was retained in memory, you’ll be retaining side objects.
 
-> This is a common mistake for Objective-C, and most of them even don’t know what’s going on when they’re using reference objects inside blocks. Fortunately Swift solved it pretty well with types and retain level specification when closures are defined: { [weak self] _ in }
+> This is a common mistake for Objective-C, and most of them even don’t know what’s going on when they’re using reference objects inside blocks. Fortunately Swift solved it pretty well with types and retain level specification when closures are defined.
 
 I’ve seem the problems above manifesting when the user logouts and you want to reset the state of your static/singleton API client. Things start to behave quite randomly.
 
@@ -136,7 +136,7 @@ And overall, don’t overwhelm with this concepts. You can also use Object Orien
 
 ## References
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/oFlJMkOJz70" frameborder="0" allowfullscreen></iframe>
+<iframe title="Video" width="560" height="315" src="https://www.youtube.com/embed/oFlJMkOJz70" frameborder="0" allowfullscreen></iframe>
 
 - [Functions, a love story](https://www.youtube.com/watch?v=oFlJMkOJz70) by Josh Abernathy
 - [Functional Reactive Programming in an Imperative World](https://realm.io/news/nacho-soto-functional-reactive-programming/) by Nacho Soto

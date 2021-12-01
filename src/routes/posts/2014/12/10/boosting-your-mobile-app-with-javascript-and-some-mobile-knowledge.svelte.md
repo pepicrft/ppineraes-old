@@ -179,6 +179,6 @@ After the previous (and big summary) of the technologies we're using at 8fit and
 - **It might be restrictive** in the future in terms of interactivity, animations, ... If you start noticing that, you can remove those bottlenecks using a native solution for them. We're doing though with the interactive workouts.
 - **Analyze your resources and your product** If you have enough resources to have a mobile solution do it! But if now let's make web dancing on mobile **we did it!**
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/vlT3b90-PDc" frameborder="0" allowfullscreen></iframe>
+<iframe title="Youtube video" width="560" height="315" src="//www.youtube.com/embed/vlT3b90-PDc" frameborder="0" allowfullscreen></iframe>
 
 <script async class="speakerdeck-embed" data-id="2f31eba0697e0132fd480a025a0ea166" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>

@@ -15,7 +15,7 @@ This week I've been working automating some review tasks at SoundCloud with a to
 
 > The tool uses the user you specify through a DANGER_GITHUB_API_TOKEN environment variable
 
-![image](https://artsy.github.io/images/2016-03-02-Lazily-Automation/danger.png)
+![Danger](https://artsy.github.io/images/2016-03-02-Lazily-Automation/danger.png)
 
 ### Creating "dangers" in multiple ruby files
 

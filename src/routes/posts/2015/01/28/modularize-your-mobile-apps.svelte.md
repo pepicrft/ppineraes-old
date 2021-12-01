@@ -6,16 +6,6 @@ modified: 2015-01-28
 tags: [target, module, android studio, scheme, xcconfig, xcode]
 ---
 
-<iframe
-  width="560"
-  height="315"
-  src="//www.youtube.com/embed/OJ94KqmsxiI"
-  frameborder="0"
-  allowfullscreen
-></iframe>
-
-_Recommended talk where a Facebook iOS Engineer explains how they user modules_
-
 When we start building mobile apps we tend to do everything on the same bundle. If you are an iOS developer that means only one target, with one scheme with the build config and that project has some dependencies that might be attached as frameworks, static libraries, or using a dependency manager like CocoaPods. If you are familiar with Android you probably use a module with some dependencies managed by Gradle.
 
 If you think a bit about that solution it's mixing in the same bundle stuff which is strictly related to the device and the presentation layer, the application core logic, and the interaction with the system/external frameworks. **What happens if Apple/Google change any of the existing frameworks?** You'll have to analyze your app find all the framework dependencies and replace them and what about using your application core logic in a different device with a different interface? You'll probably end up adding a bunch of if/else statements in your code. _You know that's not a clean way to do the things..._
@@ -33,7 +23,7 @@ Both **iOS and Android development tools** offer great tools to deal with that. 
 
 The image below shows the difference between working with only a big app bundle and splitting it in small bundles.
 
-![](/assets/images/xcode_big_project.png)
+![Large project](/assets/images/xcode_big_project.png)
 
 ### Components
 
@@ -115,12 +105,12 @@ In case of Andorid we'll use Gradle to define our modules. Gradle allows you to 
 
 - Let's create three a main Android app module and two Android Libraries. _For example, ExampleApp, ExampleCore, ExampleData_
 
-![](/assets/images/posts/android-library.png)
-![](/assets/images/posts/android-projects-list.png)
+![Library](/assets/images/posts/android-library.png)
+![Projects list](/assets/images/posts/android-projects-list.png)
 
 - Inside _File > Project Structure_ define core and data modules **as dependencies** of the app module as shown below.
 
-![](/assets/images/android-dependencies.png)
+![Dependencies](/assets/images/android-dependencies.png)
 
 - It will create automatically the dependencies in your app build.gradle file as shown below:
 
