@@ -46,4 +46,4 @@ If you are struggling with some problems and you would need help to get them sol
 
 Would you like to share a video of a talk you watched online? Or some photos of your holidays in SF? Use the channel **off-topic** to talk about anything that is not directly related to Swift.
 
-![Swift](/assets/images/swift-footer.png)
+![Swift](/images/posts/swift-footer.png)

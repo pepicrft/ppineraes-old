@@ -8,4 +8,4 @@ tags: [berlin, oberbaum, water color, painting]
 - **What:** [Oberbaumbrücke](https://en.wikipedia.org/wiki/Oberbaum_Bridge)
 - **Surface:** Water color A4 paper.
 
-![Oberbaumbrücke in Berlin](/assets/images/oberbaum-bridge.jpg)
+![Oberbaumbrücke in Berlin](/images/posts/oberbaum-bridge.jpg)

@@ -41,7 +41,7 @@ xclint MyProject.xcodeproj
 
 The screenshot below shows an example of the tool output when there are validation errors:
 
-![xclint output when there are warnings](/assets/images/xclint.png)
+![xclint output when there are warnings](/images/posts/xclint.png)
 
 ### What's next
 

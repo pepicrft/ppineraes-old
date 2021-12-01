@@ -29,13 +29,13 @@ Because what you get in the end is a standard Xcode project, you don't have to 
 
 The image below represents the layers of indirection that are introduced when using alternative build systems. Note that build files have to be translated into another representation that is then passed to a project generator to get an Xcode project. Moreover, the final Xcode projects need to need to trick Xcode into using Bazel or Buck as a build system.
 
-![An image that shows the setup that companies adopt when using Buck or Bazel](/assets/images/module-caching-1.png)
+![An image that shows the setup that companies adopt when using Buck or Bazel](/images/posts/module-caching-1.png)
 
 The diagram represents the common setup when using alternative build systems.
 
 In the case of Tuist, there are no layers of indirection. It takes your project definition and generates an Xcode  project ready to be used with Xcode's build system. Because of its simplicity, the setup is easier to reason about, optimize, and debug. Moreover, it makes caching accessible to more users:
 
-![An image that shows how caching works with Tuist](/assets/images/module-caching-2.png)
+![An image that shows how caching works with Tuist](/images/posts/module-caching-2.png)
 
 The diagram represents how the caching works in Tuist.
 

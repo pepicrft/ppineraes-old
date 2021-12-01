@@ -1,7 +1,6 @@
 ---
 title: "Exploring a world of opportunities with Web3"
 categories: ["blockchain", "dapps", "web3"]
-layout: post
 ---
 
 Up until very recently,

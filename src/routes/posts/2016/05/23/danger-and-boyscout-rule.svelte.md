@@ -6,7 +6,7 @@ modified: 2016-05-23
 tags: [danger, github, soundcloud]
 ---
 
-![Boy Scouts](/assets/images/boyscouts.jpg)
+![Boy Scouts](/images/posts/boyscouts.jpg)
 
 Some months ago I did introduce [Danger](https://github.com/danger/danger) in the SoundCloud project. When I first read about it was in [Artsy Engineering Blog]() where Orta explained how they used at Artsy. For those who don't know what Danger is, it's a Ruby tool designed to be run on CI and allows you to execute some checks on your PRs and report the results back to the PR adding a comment. It's like a linting step but that have access to the PR information and send the report back to the PR.
 

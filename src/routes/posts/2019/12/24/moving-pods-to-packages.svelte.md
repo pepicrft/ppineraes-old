@@ -20,4 +20,4 @@ another side project in which I'm involved and to which I couldn't contribute mu
 Last weekend I worked on creating the [documentation website](https://angle.dev/documentation) in Gatsby.
 It already contains the getting started steps in case you want to give it a try.
 
-![Image that shows how dependencies are defined as packages in Angle](/assets/images/xcode-swift-packages.png)
+![Image that shows how dependencies are defined as packages in Angle](/images/posts/xcode-swift-packages.png)

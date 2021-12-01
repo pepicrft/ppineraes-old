@@ -16,7 +16,7 @@ tuist focus Search
 
 We traverse your project's dependency graph and remove the elements you don't need to work on Search. Let's look at the example below:
 
-![An image that shows how the tree-shaking of projects works with Tuist](/assets/images/tree-shake.png)
+![An image that shows how the tree-shaking of projects works with Tuist](/images/posts/tree-shake.png)
 
 We have a simple modular app with a layer of feature frameworks and another layer of utility frameworks. When we focus on Search we get that target and its dependant targets (e.g. SearchExample, SearchTests, SearchUITests) as sources, and its dependencies as binaries (if they exist in the cache). This means Xcode doesn't have to index anything related to App, Settings, and Home, and clean builds of the framework will only have to compile Search. For the user, that also means that they can safely clean their environment (i.e. deleting DerivedData) without feeling concerned about leading to a slow build.
 

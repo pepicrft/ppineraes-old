@@ -23,7 +23,7 @@ Both **iOS and Android development tools** offer great tools to deal with that. 
 
 The image below shows the difference between working with only a big app bundle and splitting it in small bundles.
 
-![Large project](/assets/images/xcode_big_project.png)
+![Large project](/images/posts/xcode_big_project.png)
 
 ### Components
 
@@ -105,12 +105,12 @@ In case of Andorid we'll use Gradle to define our modules. Gradle allows you to 
 
 - Let's create three a main Android app module and two Android Libraries. _For example, ExampleApp, ExampleCore, ExampleData_
 
-![Library](/assets/images/posts/android-library.png)
-![Projects list](/assets/images/posts/android-projects-list.png)
+![Library](/images/posts/posts/android-library.png)
+![Projects list](/images/posts/posts/android-projects-list.png)
 
 - Inside _File > Project Structure_ define core and data modules **as dependencies** of the app module as shown below.
 
-![Dependencies](/assets/images/android-dependencies.png)
+![Dependencies](/images/posts/android-dependencies.png)
 
 - It will create automatically the dependencies in your app build.gradle file as shown below:
 

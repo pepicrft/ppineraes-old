@@ -7,7 +7,7 @@ tags: ["angle", "cocoa", "appkit", "macos"]
 If you use macOS,
 you have probably realized many apps have the following UI component on their settings:
 
-![Screenshots that shows the UI controller that many apps use to add or remove items from a list](/assets/images/add-remove-nsbox.png)
+![Screenshots that shows the UI controller that many apps use to add or remove items from a list](/images/posts/add-remove-nsbox.png)
 
 I had to add one of those to the settings view of [Angle](https://angle.dev),
 and then I realized that it's not a pre-defined component that you can drag & drop and use. _Does that mean we have to implement a custom view for it?_ You are right!

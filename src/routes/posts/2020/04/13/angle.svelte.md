@@ -15,7 +15,7 @@ Angle downloads the app,
 launches a simulator,
 and opens the app in it.
 
-![An screenshot that shows the comment that Angle adds from which users can trigger builds](/assets/images/angle-pr.png)
+![An screenshot that shows the comment that Angle adds from which users can trigger builds](/images/posts/angle-pr.png)
 
 It doesn't sound that amazing when described with words,
 but believe me,

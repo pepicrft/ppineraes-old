@@ -15,7 +15,7 @@ Below there's a common Xcode project setup with all the elements that are part o
 - **Optimizations** are not easy. Different pieces are so coupled to each other that introducing optimizations that have a significantly affect on developers' workflows is a challenging task.
 - Because there are many potential points of failure, when errors arise, they are harder to **debug**. _Is this failing because of my CocoaPods version? Is it because of this pod lane that I'm using? Might it be related to the version of Ruby I'm using?_
 
-![The diagram shows an example of a complex Xcode project setup](/assets/images/complex-setup.png)
+![The diagram shows an example of a complex Xcode project setup](/images/posts/complex-setup.png)
 
 That's a setup prone to errors and stress for developers with which I'd never want to work. We've spent most of our time building great tools but not that much thinking about providing a **cohesive experience when bringing them together**.
 
