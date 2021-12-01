@@ -2,6 +2,8 @@
 
 import glob from "glob-fs";
 import path from "path";
+import fs from "fs";
+import { exit } from "process";
 
 let posts = glob({gitignore: true}).readdirSync("posts/*.md")
 posts = posts.map((postFilePath) => {
@@ -18,4 +20,18 @@ posts = posts.map((postFilePath) => {
         redirectTo: `/posts/${year}/${month}/${day}/${name.replace(".svelte.md", "")}`,
     }
 })
+if (posts.length === 0) { exit(0); }
+
+const redirectFileContent = posts.map((post) => {
+    return `${post.redirectFrom}    ${post.redirectTo}`
+}).join("\n")
+
+fs.writeFileSync("_redirects", redirectFileContent)
+
+posts.forEach((post) => {
+    const directoryName = path.dirname(post.to);
+    fs.mkdirSync(directoryName, { recursive: true })
+    fs.renameSync(post.from, post.to);
+})
+
 console.log(posts[0]);
