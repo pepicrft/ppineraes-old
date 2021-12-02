@@ -14,7 +14,6 @@ body {
   font-size: 1.25em;
   font-family: 'Merriweather', serif;
   line-height: var(--line-height);
-  cursor: default;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -25,8 +24,6 @@ body {
 
   }
 }
-
-.post-meta { text-align: right; }
 
 h1, h2, h3, h4, h5, h6 { 
   font-family: "Inter";
