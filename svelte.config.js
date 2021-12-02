@@ -2,6 +2,7 @@ import { mdsvex } from 'mdsvex';
 import mdsvexConfig from './mdsvex.config.js';
 import preprocess from 'svelte-preprocess';
 import adapter from '@sveltejs/adapter-netlify';
+import fetchPosts from "./src/lib/utilities/fetchPosts.js";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -18,7 +19,15 @@ const config = {
 			assets: 'static'
 		},
 		prerender: {
-			crawl: true
+			enabled: true,
+			entries: [
+				"/about",
+				"/posts/archive",
+				"/stack",
+				"/bookshelf",
+				"/micro-posts",
+				...fetchPosts().map((post) => post.slug)
+			]
 		}
 	}
 };
