@@ -22,14 +22,21 @@
 
 <script>
 	import { page } from '$app/stores';
+	import Header from '$lib/components/SEO/index.svelte';
 
 	const path = $page.path;
 	export let posts = [];
-	const title = posts.find((post) => post.slug.includes(path)).title;
+	let post = null;
+	if (path !== '/archive') {
+		post = posts.find((post) => post.slug.includes(path));
+	}
 </script>
 
-<h1>
-	{title}
-</h1>
+{#if post}
+	<Header slug={post.slug} title={post.title} metadescription={post.excerpt} />
+	<h1>
+		{post.title}
+	</h1>
+{/if}
 
 <slot />
