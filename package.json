@@ -51,5 +51,8 @@
 			"svelte"
 		]
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"front-matter": "^4.0.2"
+	}
 }

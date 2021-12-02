@@ -1,9 +1,29 @@
 <script context="module">
 	export const prerender = true;
+
+	export async function load({ page, fetch, session, stuff }) {
+		const url = `/posts.json`;
+		const res = await fetch(url);
+
+		if (res.ok) {
+			return {
+				props: {
+					posts: (await res.json()).slice(0, 5)
+				}
+			};
+		}
+
+		return {
+			status: res.status,
+			error: new Error(`Could not load ${url}`)
+		};
+	}
 </script>
 
 <script>
 	import Header from '$lib/components/SEO/index.svelte';
+
+	export let posts = [];
 </script>
 
 <Header
@@ -37,6 +57,13 @@
 			<li><a href="/bookshelve">Bookshelf</a></li>
 			<li><a href="/bookshelve">Micro-posts</a></li>
 			<li><a href="https://www.instapaper.com/p/6377648" target="_blank">Read later</a></li>
+		</ul>
+		<li>All posts</li>
+		<ul>
+			{#each posts as post}
+				<li>{post.formattedDate} <a href={post.slug}>{post.title}</a></li>
+			{/each}
+			<li><a href="/posts/archive">See archive...</a></li>
 		</ul>
 		<li>Projects</li>
 		<ul>
