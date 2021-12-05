@@ -17,9 +17,10 @@
 	let html = post?.html;
 	let slug = post?.slug;
 	let title = post?.title;
+	let excerpt = post?.excerpt;
 </script>
 
-<Header {slug} {title} metadescription={'excerpt'} />
+<Header {slug} {title} metadescription={excerpt} />
 <h1>
 	{title}
 </h1>
