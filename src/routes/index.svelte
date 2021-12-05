@@ -63,7 +63,7 @@
 			{#each posts as post}
 				<li>{post.formattedDate} <a href={post.slug}>{post.title}</a></li>
 			{/each}
-			<li><a href="/posts/archive">See archive...</a></li>
+			<li><a href="/archive">See archive...</a></li>
 		</ul>
 		<li>Projects</li>
 		<ul>

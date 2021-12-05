@@ -6,10 +6,10 @@ import plainText from 'markdown-it-plain-text';
 
 const fetchPosts = () => {
 	return glob({ gitignore: true })
-		.readdirSync('src/routes/posts/**/*.md')
+		.readdirSync('posts/**/*.md')
 		.reverse()
 		.map((postFilePath) => {
-			const components = postFilePath.split('/').slice(-4);
+			const components = postFilePath.split('/').slice(-1)[0].replace(".md", "").split("-");
 			const metadata = fm(fs.readFileSync(postFilePath, 'utf8'));
 			const mdExcerpt = `${metadata.body.substring(0, 250)}...`;
 			const md = new MarkdownIt();
@@ -19,8 +19,8 @@ const fetchPosts = () => {
 			const year = components[0];
 			const month = components[1];
 			const day = components[2];
-			const name = components[3].replace('.svelte.md', '');
-			const slug = `/posts/${year}/${month}/${day}/${name}`;
+			const name = components.slice(3).join("-");
+			const slug = `/${year}/${month}/${day}/${name}`;
 			const formattedDate = `${day}-${month}-${year}`;
 			return {
 				year,

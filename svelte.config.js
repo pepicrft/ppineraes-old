@@ -22,7 +22,7 @@ const config = {
 			enabled: true,
 			entries: [
 				"/about",
-				"/posts/archive",
+				"/archive",
 				"/stack",
 				"/bookshelf",
 				"/micro-posts",
