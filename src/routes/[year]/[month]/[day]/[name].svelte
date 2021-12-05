@@ -15,11 +15,11 @@
 	import Header from '$lib/components/SEO/index.svelte';
 	export let post = null;
 	let html = post?.html;
-	let date = post?.date;
+	let slug = post?.slug;
 	let title = post?.title;
 </script>
 
-<Header slug={post.slug} {title} metadescription={post.excerpt} />
+<Header {slug} {title} metadescription={'excerpt'} />
 <h1>
 	{title}
 </h1>

@@ -56,7 +56,7 @@ Multiple projects can be grouped in a workspace. When projects are added to a wo
 As with schemes, workspaces are plain xml files that can be easily modified.
 
 <p align="center">
-  <img src="images/modular-workspace.png" width="350px" />
+  <img src="/images/posts/modular-workspace.png" width="350px" />
 </p>
 
 # Dependencies 🌱
@@ -79,7 +79,7 @@ The difference between a framework and a library _(linked static or dynamically)
 You can read more about frameworks/libraries and static/dynamic on the [following link](https://pewpewthespells.com/blog/static_and_dynamic_libraries.html).
 
 <p align="center">
-  <img src="images/modular-linking.png" width="500px" />
+  <img src="/images/posts/modular-linking.png" width="500px" />
 </p>
 
 Applications can depend on **precompiled** and **not-compiled** dependencies.
@@ -102,7 +102,7 @@ When our app depends on precompiled dependencies it's important that the depende
 > **A note on dependencies and configurations:** The configurations of all the dependencies should match. If you are building your app with the Alpha configuration and any of the dependencies doesn't have that configuration, the compilation will fail with a framework not found error. When that happens, Xcode doesn't compile the framework but doesn't throw any error.
 
 <p align="center">
-  <img src="images/modular-dependencies.png" width="400px" />
+  <img src="/images/posts/modular-dependencies.png" width="400px" />
 </p>
 
 ## Linking with Xcode
@@ -155,7 +155,7 @@ The image below illustrates how the setup looks like:
 <br />
 
 <p align="center">
-  <img src="images/modular-cocoapods.png" width="300px" />
+  <img src="/images/posts/modular-cocoapods.png" width="300px" />
 </p>
 
 ## Carthage
@@ -175,7 +175,7 @@ Carthage approach is pretty different. Besides the resolution of dependencies, t
 - The same script copies the symbols to the proper folder to make them debuggable.
 
 <p align="center">
-  <img src="images/modular-carthage.png" width="300px" />
+  <img src="/images/posts/modular-carthage.png" width="300px" />
 </p>
 
 ---
