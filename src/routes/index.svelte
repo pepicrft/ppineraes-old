@@ -33,7 +33,10 @@
 />
 
 <header>
-	<h1>Craftweg</h1>
+	<a href="https://www.robotos.art/roboto/3321" target="_blank">
+		<img src="/avatars/roboto-transparent.png" class="avatar" />
+	</a>
+	<h1>~/craftweg/src/</h1>
 	<p>Hola 👋.</p>
 	<p>
 		I'm <b>Pedro Piñera</b>. I'm a Staff Production Engineer at Shopify, and a open-source and
@@ -87,3 +90,10 @@
 		</ul>
 	</ul>
 </main>
+
+<style lang="scss">
+	.avatar {
+		display: inline;
+		width: 200px;
+	}
+</style>
