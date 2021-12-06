@@ -8,6 +8,7 @@ export const posts = Object.entries(modules).map(
     const components = path.split("-");
     const slug = `/${components[0]}/${components[1]}/${components[2]}/${components.slice(3).join("-")}`
     const { metadata } = module
+    const tags = metadata.tags ?? [];
     const { html } = module.default.render()
     const excerpt = `${convert(html, {
       wordwrap: 300
@@ -17,6 +18,7 @@ export const posts = Object.entries(modules).map(
       html,
       excerpt,
       ...metadata,
+      tags
     }
   }
 )

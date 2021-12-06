@@ -1,4 +1,4 @@
-import { posts } from './_posts'
+import { posts } from '../../../_posts'
 
 export async function get(req) {
     const { path } = req

@@ -1,37 +1,52 @@
 import type { RequestHandler } from "@sveltejs/kit";
+import website from "$lib/config/website";
+import { posts } from "./_posts";
+import xmlescape from "xml-escape";
 
-export const get: RequestHandler = async (request) => {
-  // const res = await fetch(import.meta.env.VITE_BASE_ENDPOINT + '/posts/posts.json');
-  // const data = await res.json();
-  // const body = render(data.posts);
+export const get: RequestHandler = async (request) => {  
   const headers = {
     'Cache-Control': `max-age=0, s-max-age=${600}`,
-    // 'Content-Type': 'application/xml',
+    'Content-Type': 'application/xml',
   };
   return {
-    body: render([]),
+    body: render(posts),
     headers,
   };
 };
 
-const render = (posts) => `<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-<channel>
-<atom:link href="http://wwww.davidwparker.com/rss" rel="self" type="application/rss+xml" />
-<title>David W Parker</title>
-<link>https://www.davidwparker.com</link>
-<description>David W Parker's blog about Code, Entrepreneurship, and more</description>
+const render = (posts) => `<feed xmlns="http://www.w3.org/2005/Atom">
+<link href="${website.siteUrl}/feed.xml" rel="self" type="application/atom+xml"/>
+<link href="${website.siteUrl}" rel="alternate" type="text/html"/>
+<updated>2021-11-30T08:59:12+00:00</updated>
+<id>${website.siteUrl}/feed.xml</id>
+<title type="html">Craftweg</title>
+<link>${website.siteUrl}</link>
+<subtitle>${website.description}</subtitle>
+
+<author>
+  <name>Pedro Piñera</name>
+</author>
+
 ${posts
   .map(
-    (post) => `<item>
-<guid>https://www.davidwparker.com/posts/${post.slug}</guid>
-<title>${post.title}</title>
-<link>https://www.davidwparker.com/posts/${post.slug}</link>
-<description>${post.description}</description>
-<pubDate>${new Date(post.published).toUTCString()}</pubDate>
-</item>`
+    (post) => `
+    <entry>
+      <title type="html">${post.title}</title>
+      <link href="${website.siteUrl}${post.slug}" rel="alternate" type="text/html" title="${post.title}"/>
+      <published>2021-11-29T00:00:00+00:00</published>
+      <updated>2021-11-29T00:00:00+00:00</updated>
+      <id>${website.siteUrl}${post.slug}</id>
+      <content type="html" xml:base="${website.siteUrl}${post.slug}">${xmlescape(post.html)}</content>
+      <author>
+      <name>Pedro Piñera</name>
+      </author>
+      ${post.tags.map((tag) => {
+        return `<category term="${xmlescape(tag)}"/>`
+      }).join('')}
+      <summary type="html">${xmlescape(post.excerpt)}</summary>
+    </entry>
+    `
   )
   .join('')}
-</channel>
-</rss>
+</feed>
 `;
