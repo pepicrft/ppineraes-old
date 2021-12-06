@@ -20,7 +20,7 @@ This page is a compilation of all the tools that I use day-to-day in no particul
 
 ### [Standard Notes](https://standardnotes.com/)
 
-<img src="https://www.onworks.net/imageswebp/standardnotesicon.png" width="100" alt="Standard Notes icon"/>
+<img src="https://s3.amazonaws.com/standard-notes/media/SN-Icon-500.png" width="100" alt="Standard Notes icon"/>
 
 It's my favorite tool for taking notes. What I like the most about the app is that the team behind it believes in [people's privacy](https://standardnotes.com/privacy) and the [longevity](https://standardnotes.com/longevity) of the notes that people create. In a world where FOMOed investors are backing short-lived products, we need to support the people that believe in long-lived technological products that are self-funded.
 
