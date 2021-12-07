@@ -18,9 +18,19 @@
 	let slug = post?.slug;
 	let title = post?.title;
 	let excerpt = post?.excerpt;
+	let date = post?.date;
+	let timeToReadInMinutes = post?.timeToReadInMinutes;
 </script>
 
-<Header {slug} {title} metadescription={excerpt} />
+<Header
+	{slug}
+	{title}
+	metadescription={excerpt}
+	article={true}
+	lastUpdated={date}
+	datePublished={date}
+	timeToRead={timeToReadInMinutes}
+/>
 <h1>
 	{title}
 </h1>

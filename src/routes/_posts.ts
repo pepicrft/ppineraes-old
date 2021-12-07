@@ -1,5 +1,6 @@
 import { convert } from 'html-to-text'
 import moment from "moment";
+import readingTime from "reading-time";
 
 const modules = import.meta.globEager('/posts/**/*.md')
 
@@ -16,10 +17,13 @@ export const posts = Object.entries(modules).map(
     const excerpt = `${convert(html, {
       wordwrap: 300
     })}...`;
+    const timeToReadInMinutes = Math.round(readingTime(html).minutes);
+
     return {
       slug,
       html,
       excerpt,
+      timeToReadInMinutes,
       date: formattedDate,
       ...metadata,
       tags
