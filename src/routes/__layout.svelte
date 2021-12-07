@@ -16,7 +16,7 @@
 	<meta name="theme-color" content="#ffffff" />
 
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather" />
 	<link
 		href="https://fonts.googleapis.com/css2?family=Inter:wght@600;800&display=swap"
@@ -26,13 +26,16 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@radix-ui/colors@latest/purple.css" />
 </svelte:head>
 
-<main class="page-content" aria-label="Content">	
+<main class="page-content" aria-label="Content">
 	<div class="wrapper">
-		{#if $page.path !== "/" }
+		{#if $page.path !== '/'}
 			<a href="/">Back</a>
 		{/if}
 		<slot />
 	</div>
 </main>
 
-<style lang="scss" src="../styles/main.scss" global/>
+<style lang="scss" src="../styles/main.scss" global>
+	.noop {
+	}
+</style>
