@@ -16,7 +16,7 @@
 	<meta name="theme-color" content="#ffffff" />
 
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather" />
 	<link
 		href="https://fonts.googleapis.com/css2?family=Inter:wght@600;800&display=swap"
@@ -36,6 +36,4 @@
 </main>
 
 <style lang="scss" src="../styles/main.scss" global>
-	.noop {
-	}
 </style>
