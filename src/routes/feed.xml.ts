@@ -17,7 +17,7 @@ export const get: RequestHandler = async (request) => {
 const render = (posts) => `<feed xmlns="http://www.w3.org/2005/Atom">
 <link href="${website.siteUrl}/feed.xml" rel="self" type="application/atom+xml"/>
 <link href="${website.siteUrl}" rel="alternate" type="text/html"/>
-<updated>2021-11-30T08:59:12+00:00</updated>
+<updated>${posts.at(0).date}</updated>
 <id>${website.siteUrl}/feed.xml</id>
 <title type="html">Craftweg</title>
 <link>${website.siteUrl}</link>
@@ -33,8 +33,8 @@ ${posts
     <entry>
       <title type="html">${post.title}</title>
       <link href="${website.siteUrl}${post.slug}" rel="alternate" type="text/html" title="${post.title}"/>
-      <published>2021-11-29T00:00:00+00:00</published>
-      <updated>2021-11-29T00:00:00+00:00</updated>
+      <published>${post.date}</published>
+      <updated>${post.date}</updated>
       <id>${website.siteUrl}${post.slug}</id>
       <content type="html" xml:base="${website.siteUrl}${post.slug}">${xmlescape(post.html)}</content>
       <author>
