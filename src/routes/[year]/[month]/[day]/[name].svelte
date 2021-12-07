@@ -1,12 +1,15 @@
 <script context="module">
 	export const prerender = true;
+
 	export async function load({ fetch, page: { path } }) {
 		const res = await fetch(`${path}.json`);
-		if (res.ok) {
-			const { post } = await res.json();
+		if (res?.ok) {
+			const response = await res?.json();
 			return {
-				props: { post }
+				props: { post: response?.post }
 			};
+		} else {
+			return { props: { post: null } };
 		}
 	}
 </script>

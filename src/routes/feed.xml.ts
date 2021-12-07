@@ -1,6 +1,6 @@
 import type { RequestHandler } from "@sveltejs/kit";
 import website from "$lib/config/website";
-import { posts } from "./_posts";
+import posts from "./_posts";
 import xmlescape from "xml-escape";
 
 export const get: RequestHandler = async (request) => {  

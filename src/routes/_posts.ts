@@ -4,7 +4,7 @@ import readingTime from "reading-time";
 
 const modules = import.meta.globEager('/posts/**/*.md')
 
-export const posts = Object.entries(modules).map(
+const posts = (Object.entries(modules).map(
   ([filepath, module]) => {
     const path = filepath.replace("/posts/", "").replace(".md", "");
     const components = path.split("-");
@@ -29,4 +29,6 @@ export const posts = Object.entries(modules).map(
       tags
     }
   }
-).reverse();
+) ?? []).reverse();
+
+export default posts;
