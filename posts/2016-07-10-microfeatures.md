@@ -32,7 +32,7 @@ Frameworks should **speak** the same public language. As we can code on _Swift/O
 
 It doesn’t necessarily mean every feature has to be one framework. In most of cases it’ll be but it can also be more than one. For example, a _Player_ feature, could be 2 frameworks, a _PlayerCore_ with everything that has to be with the interaction with [`AVPlayer`](https://developer.apple.com/library/ios/documentation/AVFoundation/Reference/AVPlayer_Class/index.html) and a `PlayerUI` offers the _View/ViewController_ that uses the _PlayerCore_ underneath.
 
-If you want to know more about frameworks, I’ve written about [them before](/2016/04/22/framework-oriented-programming.html), but there are also good articles out there where they explain what a framework is in essence, what’s the difference between framework and a Library, and the difference between Static and Dynamic ones. Here you have a list of good references to check out:
+If you want to know more about frameworks, I’ve written about them before, but there are also good articles out there where they explain what a framework is in essence, what’s the difference between framework and a Library, and the difference between Static and Dynamic ones. Here you have a list of good references to check out:
 
 - [Static and Dynamic libraries](https://pewpewthespells.com/blog/static_and_dynamic_libraries.html)
 - [How to create a framework for iOS](https://www.raywenderlich.com/65964/create-a-framework-for-ios)
