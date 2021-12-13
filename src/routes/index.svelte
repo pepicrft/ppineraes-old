@@ -33,9 +33,7 @@
 />
 
 <header>
-	<a href="https://www.robotos.art/roboto/3321" target="_blank">
-		<img src="/avatars/roboto-transparent.png" class="avatar" />
-	</a>
+	<img src="/avatars/avatar.png" class="avatar" />
 	<h1>~/craftweg/src/</h1>
 	<p>Hola 👋.</p>
 	<p>
