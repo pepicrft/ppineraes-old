@@ -5,7 +5,7 @@ excerpt: Specialized engineers usually refrain from working on tasks outside the
 tags: [shopify, engineering, teams, leadership]
 ---
 
-*How often have you heard "I'm an iOS engineer"?* Every time I hear it, I wonder if that means that the engineer is only able to code iOS apps, or that it's their expertise area but are open to engineer for other platforms and with other programming languages.
+_How often have you heard "I'm an iOS engineer"?_ Every time I hear it, I wonder if that means that the engineer is only able to code iOS apps, or that it's their expertise area but are open to engineer for other platforms and with other programming languages.
 
 I used to fall in the former group. Doing something other than iOS or Swift did not motivate me, and ended up procrastinating when the opportunity of doing something else came up. Hopefully that changed, and being honest and professionally speaking, it's made a huge difference in my day to day job.
 
@@ -17,10 +17,10 @@ This continues to be a pattern in many projects and companies. Shopify follows a
 
 As an example, I've seen my team at Shopify working on the following tasks:
 
-* Build a command line tool in Ruby
-* Develop an internal web app to coordinate releases to the store.
-* Automate the provisioning of CI hosts to run mobile builds.
-* Investigate and help speed up builds.
+- Build a command line tool in Ruby
+- Develop an internal web app to coordinate releases to the store.
+- Automate the provisioning of CI hosts to run mobile builds.
+- Investigate and help speed up builds.
 
 Unfortunately, this setup might not be possible in small companies. Constantly jumping into new domains is expensive because developers need to gather context and learn about every new domain they jump it. That requires time.
 

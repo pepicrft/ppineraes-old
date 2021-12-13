@@ -1,6 +1,6 @@
 ---
 title: Swinging the pendulum back to engineering
-categories: ["shopify", "management", "coding"]
+categories: ['shopify', 'management', 'coding']
 layout: post
 ---
 

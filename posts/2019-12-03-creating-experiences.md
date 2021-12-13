@@ -15,5 +15,4 @@ It's also exciting thinking of solutions for problems that I experienced myself.
 
 And I do all of this in the open because I'd like anyone to be part on helping others. I worked on a solid foundation to make this possible and now I'm starting to see the results.
 
-
 Creating experiences in the open is awesome.

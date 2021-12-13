@@ -1,8 +1,8 @@
 type Environment = {
-  githubToken: string
-}
+	githubToken: string;
+};
 
 const environment: Environment = {
-  githubToken: process.env['GITHUB_TOKEN']
-}
+	githubToken: process.env['GITHUB_TOKEN']
+};
 export default environment;

@@ -5,11 +5,11 @@ excerpt: In the last months I've been investing a big chunk of my free time on b
 tags: [xcode, scale, swift, tuist, developer]
 ---
 
-These days I'm attending Shopify's RnD summit where different teams give talks and workshops about some areas of the company. In today's talks, there was a topic that resonated with me: **being obsessed with developers productivity**. It made me think about a tool which I've been building for a few months, [Tuist](https://github.com/tuist), and what led me to devote part of my free time to build it. 
+These days I'm attending Shopify's RnD summit where different teams give talks and workshops about some areas of the company. In today's talks, there was a topic that resonated with me: **being obsessed with developers productivity**. It made me think about a tool which I've been building for a few months, [Tuist](https://github.com/tuist), and what led me to devote part of my free time to build it.
 
 > The name of Tuist comes from merging build and test.
 
-I've been doing iOS development for most of my career. I started building apps myself, then I jumped into building them within a team, and eventually, I ended up researching and working on how to architect them to make sure that they scaled well with the growth of the team and the project. If you are building a simple app with a few targets, it's probably enough to use Xcode and maybe some automation tool like Fastlane that takes some manual work off from you. If you have the size of a company like Facebook, you can create a team of engineers to address your project needs. Unfortunately, not all the companies are Facebook which can create a team focused on making sure that the project scales and developers are productive working on it. 
+I've been doing iOS development for most of my career. I started building apps myself, then I jumped into building them within a team, and eventually, I ended up researching and working on how to architect them to make sure that they scaled well with the growth of the team and the project. If you are building a simple app with a few targets, it's probably enough to use Xcode and maybe some automation tool like Fastlane that takes some manual work off from you. If you have the size of a company like Facebook, you can create a team of engineers to address your project needs. Unfortunately, not all the companies are Facebook which can create a team focused on making sure that the project scales and developers are productive working on it.
 
 > As an example, at Shopify there's a team focused on that, mobile tooling, which I belong to. We are not too large, but enough to have an impact on developers productivity. We maintain part of the CI infrastructure as well as the tooling and processes that developers use to interact with their projects.
 
@@ -19,11 +19,11 @@ A few years later Xcode remains the same, except with some nice features like re
 
 > Apps become complex and the tools that we are given doesn't help us deal with that complexity
 
-Things are great when we create new projects with Xcode. We are given an assistant where we can select the type of application that we'd like to create or the testing targets that we'd like to add. Those projects come with an implicit configuration that we are sometimes not aware of, but which is crucial for things to work. As we keep adding and changing things, it's very likely that we touch it resulting in our setup breaking and developers spending time figuring out why. Have you been there before? 
+Things are great when we create new projects with Xcode. We are given an assistant where we can select the type of application that we'd like to create or the testing targets that we'd like to add. Those projects come with an implicit configuration that we are sometimes not aware of, but which is crucial for things to work. As we keep adding and changing things, it's very likely that we touch it resulting in our setup breaking and developers spending time figuring out why. Have you been there before?
 
 Let me give you an example to better understand what I'm talking about. If you have an iOS app and add a watchOS one, the following things are added by Xcode:
 
-- A watchOS app and extension targets. 
+- A watchOS app and extension targets.
 - The extension target has the same bundle id as the app but prepending `.watchkitextension`.
 - The iOS app has a new build phase that embeds the app inside the products `$(CONTENTS_FOLDER_PATH)/Watch` folder.
 - The watchOS app has a target dependency with the extension. It also has a build phase to embed the extension into the plugins folder.
@@ -42,9 +42,3 @@ I'm very optimistic about the future of Tuist and the opportunity of having an i
 If Tuist sounds interesting and you would like to give it a try, or just contribute to the project just let me know. I'm eager to hear your experience using Xcode and get ideas for things Tuist could help you with. There'll be an official blog post and documentation once the first version gets published. In the meantime, feel free to head over to the [organization on GitHub](https://github.com/tuist) or check out the [project repository](https://github.com/tuist/tuist).
 
 > If making mobile developers productive sounds interesting to you and you have some experience on Ruby drop me a line.
-
-
-
-
-
-

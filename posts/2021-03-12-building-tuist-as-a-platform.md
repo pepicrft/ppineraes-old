@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Building Tuist as a platform"
-categories: ["platform", "tuist", "open source"]
+title: 'Building Tuist as a platform'
+categories: ['platform', 'tuist', 'open source']
 ---
 
 Having seen Shopify acting as an e-commerce platform that developers can extend made me think whether the same idea would be applicable to Tuist.

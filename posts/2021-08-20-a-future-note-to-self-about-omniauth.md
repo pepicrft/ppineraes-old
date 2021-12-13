@@ -1,6 +1,6 @@
 ---
-title: "A future note to self about Omniauth"
-categories: ["rails", "devise", "open-source", "omniauth"]
+title: 'A future note to self about Omniauth'
+categories: ['rails', 'devise', 'open-source', 'omniauth']
 layout: post
 ---
 
@@ -22,20 +22,21 @@ After adding the dependency to the `Gemfile`, we need to add a new initializer, 
 OmniAuth.config.allowed_request_methods = [:get, :post]
 ```
 
-In that same initializer, 
-we need to set the host to ensure Omniauth passes the right redirection URL when initiating the authentication flow. 
+In that same initializer,
+we need to set the host to ensure Omniauth passes the right redirection URL when initiating the authentication flow.
 Otherwise the Omniauth provider might fail due to mismatching URLs:
 
 ```rb
 OmniAuth.config.full_host = "https://myapp.com"
 ```
+
 If we generated the Devise views under our project's `app/views` directory, we can notice that the Omniauth links are already configure to be `POST` in the `_links.html.erb` file:
 
 ```erb
- <%= link_to("Sign in with #{OmniAuth::Utils.camelize(provider)}", 
-       omniauth_authorize_path(resource_name, provider), 
+ <%= link_to("Sign in with #{OmniAuth::Utils.camelize(provider)}",
+       omniauth_authorize_path(resource_name, provider),
        { method: :post }) %>
- ```
+```
 
 And last but not least, we need to instruct Omniauth on what to do once the authentication flow has finished.
 We do that by configuring a controller in the `routes.rb`:

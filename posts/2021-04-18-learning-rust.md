@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Learning Rust
-categories: ["rust"]
+categories: ['rust']
 ---
 
 I became weirdly excited for Rust lately. It's a programming language that I've been planning to learn for some time and I finally set out to learn it.

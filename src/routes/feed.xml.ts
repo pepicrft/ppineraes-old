@@ -1,17 +1,17 @@
-import type { RequestHandler } from "@sveltejs/kit";
-import website from "$lib/config/website";
-import posts from "./_posts";
-import xmlescape from "xml-escape";
+import type { RequestHandler } from '@sveltejs/kit';
+import website from '$lib/config/website';
+import posts from './_posts';
+import xmlescape from 'xml-escape';
 
-export const get: RequestHandler = async (request) => {  
-  const headers = {
-    'Cache-Control': `max-age=0, s-max-age=${600}`,
-    'Content-Type': 'application/xml',
-  };
-  return {
-    body: render(posts),
-    headers,
-  };
+export const get: RequestHandler = async (request) => {
+	const headers = {
+		'Cache-Control': `max-age=0, s-max-age=${600}`,
+		'Content-Type': 'application/xml'
+	};
+	return {
+		body: render(posts),
+		headers
+	};
 };
 
 const render = (posts) => `<feed xmlns="http://www.w3.org/2005/Atom">
@@ -28,25 +28,31 @@ const render = (posts) => `<feed xmlns="http://www.w3.org/2005/Atom">
 </author>
 
 ${posts
-  .map(
-    (post) => `
+	.map(
+		(post) => `
     <entry>
       <title type="html">${post.title}</title>
-      <link href="${website.siteUrl}${post.slug}" rel="alternate" type="text/html" title="${post.title}"/>
+      <link href="${website.siteUrl}${post.slug}" rel="alternate" type="text/html" title="${
+			post.title
+		}"/>
       <published>${post.date}</published>
       <updated>${post.date}</updated>
       <id>${website.siteUrl}${post.slug}</id>
-      <content type="html" xml:base="${website.siteUrl}${post.slug}">${xmlescape(post.html)}</content>
+      <content type="html" xml:base="${website.siteUrl}${post.slug}">${xmlescape(
+			post.html
+		)}</content>
       <author>
       <name>Pedro Piñera</name>
       </author>
-      ${post.tags.map((tag) => {
-        return `<category term="${xmlescape(tag)}"/>`
-      }).join('')}
+      ${post.tags
+				.map((tag) => {
+					return `<category term="${xmlescape(tag)}"/>`;
+				})
+				.join('')}
       <summary type="html">${xmlescape(post.excerpt)}</summary>
     </entry>
     `
-  )
-  .join('')}
+	)
+	.join('')}
 </feed>
 `;

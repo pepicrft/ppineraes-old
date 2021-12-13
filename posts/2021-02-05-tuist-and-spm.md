@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Tuist and the Swift Package Manager"
-categories: ["tuist", "open-source", "github", "swift", "xcode"]
+title: 'Tuist and the Swift Package Manager'
+categories: ['tuist', 'open-source', 'github', 'swift', 'xcode']
 ---
 
 It's common to see developers wondering why they should use [Tuist](https://tuist.io) instead of the Swift Package Manager (SPM) for modeling their projects.

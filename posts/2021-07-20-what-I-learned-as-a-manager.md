@@ -1,6 +1,6 @@
 ---
 title: What I learned as a manager
-categories: ["management", "shopify", "engineering"]
+categories: ['management', 'shopify', 'engineering']
 ---
 
 As you might know,
@@ -13,7 +13,7 @@ This post is a **list in no particular** order of the things that I learned and 
 
 - People are unpredictable.
 - Management work is hard to measure. You can't count it and it's hard to reflect on it.
-- Achieving a balanced team state is an impossible task because of external factors that you don't control: *reorganizations, people leaving, priority shifts.* 
+- Achieving a balanced team state is an impossible task because of external factors that you don't control: _reorganizations, people leaving, priority shifts._
 - A team larger than 5 people is not a good idea. Your management starts to suffer and your team notices it.
 - Exiting someone from the company is tough.
 - Being recognized for your work is unusual, but when it happens and it comes from your reports, it's very rewarding.

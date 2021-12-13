@@ -1,7 +1,7 @@
 ---
 layout: post
 title: First thoughts on Sorbet
-tags: ["ruby", "sorbet", "types"]
+tags: ['ruby', 'sorbet', 'types']
 ---
 
 We started using [Sorbet](https://sorbet.org/) to add types to [Galaxy's codebase](https://twitter.com/appgalaxyio).

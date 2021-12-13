@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Community-driven and organization-driven open source
-categories: ["apple", "open source", "rust", "cargo", "swift"]
+categories: ['apple', 'open source', 'rust', 'cargo', 'swift']
 ---
 
 Yesterday,

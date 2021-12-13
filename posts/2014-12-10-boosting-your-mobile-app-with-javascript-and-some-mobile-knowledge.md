@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Boosting your mobile app with Javascript and some mobile knowledge"
-excerpt: "Learn how useful might be giving some steps on mobile (Android/iOS) launching mobile solutions with web knowledge and with the same mobile native experience as any other app"
+title: 'Boosting your mobile app with Javascript and some mobile knowledge'
+excerpt: 'Learn how useful might be giving some steps on mobile (Android/iOS) launching mobile solutions with web knowledge and with the same mobile native experience as any other app'
 modified: 2014-12-19
 tags: [backbone, mobile, angular, webapp, bridge]
 ---
@@ -14,28 +14,27 @@ We didn't use any kind of **bootstrap library, CSS package, or communication fra
 
 > Mobile web rendering engine is limited, get rid of fully featured web packages with tons of styles and Javascript helpers that you are not going to use at all. If you feel comfortable enough with the language like to not build a shitty and non-scalable stack do it. Otherwise appeal to any framework like Ionic Framework (based on AngularJS) which offers a mobile-like stack and components to work with.
 
-We only used Backbone, Underscore and JQuery for Javascript which simplified our project stack a lot and we avoid repetitive code (and we haven't found a bottleneck with that so far). No Ionic, Cordova, Phonegap or similar. How to have native components then? With the help of a mobile developer, in the 8fit case me. We built a communication layer between web and native. In the case of Android using a native WebView property that simplifies it a lot and in case of iOS using a *tricky* solution that we'll talk about.
+We only used Backbone, Underscore and JQuery for Javascript which simplified our project stack a lot and we avoid repetitive code (and we haven't found a bottleneck with that so far). No Ionic, Cordova, Phonegap or similar. How to have native components then? With the help of a mobile developer, in the 8fit case me. We built a communication layer between web and native. In the case of Android using a native WebView property that simplifies it a lot and in case of iOS using a _tricky_ solution that we'll talk about.
 
 ## Advantages
 
 After being working with that solution for months we have figured out that it offers some advantages when you are working with an early product. Some of them are:
 
-- **Automatic updated without having to pass through a release review**: The resources are cached by the local Webview and every time we change the frontend version we don't have to generate a new build, update the assets, add a Changelog, wait until you get reviewed by Apple and then have another one prepared to send it again to the Apple Store. Forget about that, you can just use a *Gulp* task that randomizes your resources naming. That way the **caching** engine of the mobile browser detects that those files have changend and then it reloads them. **Updates on the air!**
+- **Automatic updated without having to pass through a release review**: The resources are cached by the local Webview and every time we change the frontend version we don't have to generate a new build, update the assets, add a Changelog, wait until you get reviewed by Apple and then have another one prepared to send it again to the Apple Store. Forget about that, you can just use a _Gulp_ task that randomizes your resources naming. That way the **caching** engine of the mobile browser detects that those files have changend and then it reloads them. **Updates on the air!**
 
 - **One frontend version but customized for each system**: The application logic is the same. What changes then between Android and iOS? Basically the navigation (Android users are adapted to some patterns that iOS users are not and viceversa) and the design. If you organize your frontend following the pattern MVC you can have the same model-controller for both iOS and Android and work change only the View (Layout) and Navigation. At the end if you work natively you talk with your Android/iOS friends and you figure out that they are implementing the same, following a similar structure, and in some cases even the same naming!
 
 - **Centralized point of bugs**: That advantage is a consequence of the previous one. The more you move your application stuff to frontend the more your bugs will be centralized and easy to detect. In that case from Javascript. Does it mean that then there are no native bugs? No! there are and you have to keep having any reporting tool like Crashlytics, HockeyApp, ... but the number of those bugs will be much less than the number of bugs in frontend.
 
-
 # Building the web stack
 
 The stack of web was based on a **SPA, Single Page Application**. For those who don't know about what a single page is it's basically a web which is only an HTML file that imports a bunch of Javascript which is the responsible of different tasks like routing, controlling views, binding data, .... Javascript becomes the main actor of the movie.
 
-If you look for frameworks that help you to implement a SPA you'll find a lot of them, like BackboneJS, AngulrJS (by Google), or even some of them focused on mobile like it might be Ionic *(based on Angular)*. Those have different points in common and different concepts in other points. Choosing one solution on another depends on your familiarity with the concepts of the frameworks. If you looked for comparisons like I did a long time ago between the most popular ones (Angular and Backbone) you'll see that Angular offers you a more structured solution close to Ruby while Backbone might be more powerful if you talk to other developers (even if the architecture is not so structured). **My recommendation** *is that if you are starting with that kind of web applications, do it with Angular because Backbone requires having fought enough with Javascript before.*
+If you look for frameworks that help you to implement a SPA you'll find a lot of them, like BackboneJS, AngulrJS (by Google), or even some of them focused on mobile like it might be Ionic _(based on Angular)_. Those have different points in common and different concepts in other points. Choosing one solution on another depends on your familiarity with the concepts of the frameworks. If you looked for comparisons like I did a long time ago between the most popular ones (Angular and Backbone) you'll see that Angular offers you a more structured solution close to Ruby while Backbone might be more powerful if you talk to other developers (even if the architecture is not so structured). **My recommendation** _is that if you are starting with that kind of web applications, do it with Angular because Backbone requires having fought enough with Javascript before._
 
-We use **CoffeeScript** instead of Javascript and **Sass** instead of CSS which is later converted using **Gulp** into the respective Javascript and CSS. Chose the tools that fits best with the way you work and your feeling with the language. 
+We use **CoffeeScript** instead of Javascript and **Sass** instead of CSS which is later converted using **Gulp** into the respective Javascript and CSS. Chose the tools that fits best with the way you work and your feeling with the language.
 
-There's nothing special here but the fact that **everything has to be responsive** and you have to **check the Javascript support** of different devices because the web engine on mobile devices is more limited than on a Desktop. You can use here a website called  [caniuse](http://caniuse.com/)
+There's nothing special here but the fact that **everything has to be responsive** and you have to **check the Javascript support** of different devices because the web engine on mobile devices is more limited than on a Desktop. You can use here a website called [caniuse](http://caniuse.com/)
 
 Here's a summary of things we're using for the frontend:
 
@@ -46,28 +45,28 @@ Here's a summary of things we're using for the frontend:
 - Gulp for build tasks
 - Capistrano for deploys
 
-*Note: For those who might be interested in, we're using Rails for the backend*
+_Note: For those who might be interested in, we're using Rails for the backend_
 
-# Mobile 
+# Mobile
 
-We rejected any kind of **mobile wrapper** like Phonegap, Sencha or similars because we wanted custom communication plugins and we had a mobile developer to take care of that side. If you think about it, to have your web solution running on a mobile device (besides having done it responsive) you need a simple app project for Android and iOS *(which you can create from the IDE assistant)*, add a webview, and load the URL into it. Simple really?
+We rejected any kind of **mobile wrapper** like Phonegap, Sencha or similars because we wanted custom communication plugins and we had a mobile developer to take care of that side. If you think about it, to have your web solution running on a mobile device (besides having done it responsive) you need a simple app project for Android and iOS _(which you can create from the IDE assistant)_, add a webview, and load the URL into it. Simple really?
 
-That would be the simplest integration but we weren't a website, we were a platform which purpose was **end up running on mobile devices taking advantage of mobile features**. How many times do you complain when you have to introduce your credit card numbers for a payment? In app purchases is a great solution there for mobile, or why do you have to introduce your Facebook credentials for login if I have an app installed for that? 
-Those are just some kind of integrations that we thought about and that we currently have. 
+That would be the simplest integration but we weren't a website, we were a platform which purpose was **end up running on mobile devices taking advantage of mobile features**. How many times do you complain when you have to introduce your credit card numbers for a payment? In app purchases is a great solution there for mobile, or why do you have to introduce your Facebook credentials for login if I have an app installed for that?
+Those are just some kind of integrations that we thought about and that we currently have.
 
 > If you are planning to load a web into a mobile app the app behaves just as a simple window where you show the browser opening your website but if you want to take advantage of the real mobile advantages you need a kind of interaction between mobile-web
 
 That **interaction** is what we called **native bridge** and we built it from scratch. No framework, no abstraction, just analyzed the features we had on Android and iOS and then implemented it.
 
-
 ## Native bridge
+
 Bridging native and web depends on the platform where we're building the bridge because Apple and Google had different thoughts about giving support to web when they developed their mobile web engines.
 
 ### Android
+
 Fortunately Android did it best. The way you can bridge native with web is **exposing a Java interface** to Javascript. After exposing that interface the object is visible from Javascript and that object translates calls to its method into calls to the original Java interface. The communication would be something like this:
 
-
-```java 
+```java
 // Communication Java -> Javascript
 webView.getSettings().setJavaScriptEnabled(true);
 webView.addJavascriptInterface(new JavascriptInteractor(), "NativeBridge");
@@ -91,29 +90,29 @@ The **communication on the other direction** is executed just **evaluating javas
 
 If we tried to close the payment flow, the exchange of calls would be something like:
 
-```javascript 
-NativeBridge.buyIAPProduct("pro_subscription_1mo");
+```javascript
+NativeBridge.buyIAPProduct('pro_subscription_1mo');
 ```
-```java 
+
+```java
 webview.loadJS("Ef.vent.trigger('payment:completed', "+payment.toString()+")")
 ```
 
-
 ### iOS
 
-Apple did it difficult here. There's no native component to expose a kind of interface to Javascript as Android does. How can I do then? Well, if we take a look to the *UIWebViewDelegate* methods there's one called 
+Apple did it difficult here. There's no native component to expose a kind of interface to Javascript as Android does. How can I do then? Well, if we take a look to the _UIWebViewDelegate_ methods there's one called
 
-```objc 
+```objc
 - (BOOL)webView:(UIWebView *)webView
 shouldStartLoadWithRequest:(NSURLRequest *)request
  navigationType:(UIWebViewNavigationType)navigationType;
- ```
+```
 
 Which is a method to ask if the webview should or not load a given `NSURLRequest`. Although the purpose of this method is not to bridge Javascript with Mobile we took advantage of it for that. How? **Building a custom URL Scheme**
 
 Let's say that we built a custom **communication API** using the scheme `eightfit://` and that way any intercepted url with the scheme `eightfit://` would be passed to the **NativeBridge**. The previos `buyIAPProduct` would turn into `eightfit://buyiapproduct/product_id=pro_subscription`.
 
-```objc 
+```objc
 - (BOOL)webView:(UIWebView *)webView
 shouldStartLoadWithRequest:(NSURLRequest *)request
  navigationType:(UIWebViewNavigationType)navigationType
@@ -126,11 +125,11 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
  	}
  	return YES;
  }
- ```
+```
 
 The parsing of the URL can be made using **regex** but fortunately there were other developers thinking about it befure and we find libraries like **JLRoutes** which helps on that. What JLRoutes actually does is to build a local API passing the endpoints and actions for those endpoints:
 
-```objc 
+```objc
 [JLRoutes addRoute:@"/buyiapproduct/:product_id" handler:^BOOL(NSDictionary *parameters) {
 
     NSString *productId = parameters[@"product_id"]; // defined in the route by specifying ":product_id"
@@ -145,7 +144,7 @@ The parsing of the URL can be made using **regex** but fortunately there were ot
 
 ### Some points about the bridge
 
-As you might have noticed there are some interesting points to comment about the bridge. The first one is that the communication is a bidirectional communication. I ask for something you answer with another thing. There's  no way (right now) to get the return parameter of the sentence evaluation and if there's a way it's only using the string type, *(what if I want to return a more complex object?)*
+As you might have noticed there are some interesting points to comment about the bridge. The first one is that the communication is a bidirectional communication. I ask for something you answer with another thing. There's no way (right now) to get the return parameter of the sentence evaluation and if there's a way it's only using the string type, _(what if I want to return a more complex object?)_
 
 Another interesting point is that there's no way to expose Javascript to Mobile (neither on iOS nor Android) Mobile doesn't know anything about Javascript and you as a mobile entity that has a Webview can only communicate with Javascript evaluating sentences on the browser or turn to tricky solutions.
 
@@ -166,10 +165,10 @@ And some other interesting are coming. We're working on a frontend controller wh
 Not everything can be magic, there are some **pitfalls** we found during the development of 8fit and that I would like to share with you too because you'll have to face with them sooner or later:
 
 1. **Native doesn't know about the Javascript**: You can expose for example Java to Javascript (not possible with Objective-C). But there's no way to know what's happening on the Javascript context (variables, objects, ...). So the **recomendation** here is to documment the bridge in terms of (methods, objects, variables and types) and if it's possible to be mainteined by the same developer/s. We suffered a lot of headaches here.
-2. **Need a bit of mobile knowledge** :iphone: : If you come from web you can learn it, the complexity will depend on the number of native integrations you have. If they are not too much give your first steps on mobile, otherwise *Phonegap* is not a bad solution but not too custom for us.
-3. **Experience close to mobile but not the same**: We can start a big discussion here but my opinion about that is that there's no way (right now) to get the sdame experience than a native app using web technologies. Due (in part) to the companies behind the OS (Google & Apple) which don't want to put their efforts on better web rendering engines. Fortunately, I've to say that the things and changes and we can see  great news on iOS 8 and Lollipop :clap:
+2. **Need a bit of mobile knowledge** :iphone: : If you come from web you can learn it, the complexity will depend on the number of native integrations you have. If they are not too much give your first steps on mobile, otherwise _Phonegap_ is not a bad solution but not too custom for us.
+3. **Experience close to mobile but not the same**: We can start a big discussion here but my opinion about that is that there's no way (right now) to get the sdame experience than a native app using web technologies. Due (in part) to the companies behind the OS (Google & Apple) which don't want to put their efforts on better web rendering engines. Fortunately, I've to say that the things and changes and we can see great news on iOS 8 and Lollipop :clap:
 4. **Test the mobile experience**: This point is not taken a lot into account on a desktop solution but should be in case of mobile. Think about what should happens if your apps loses the connection, are the models properly persisted under wrong connection health, ... Check if the browser handles properly the cached resources.
-5. **Be careful with the cache:** We had some troubles with the browser not reloading cached resources. To avoid that we started renaming the frontend resources on every build, that way the browser detected them as updated and forced the download of them. *Note: We're building here our current frontend controller which is going to be the repsonsible to download it and inject into the Webview! Yei!*
+5. **Be careful with the cache:** We had some troubles with the browser not reloading cached resources. To avoid that we started renaming the frontend resources on every build, that way the browser detected them as updated and forced the download of them. _Note: We're building here our current frontend controller which is going to be the repsonsible to download it and inject into the Webview! Yei!_
 
 ## Conclusions
 

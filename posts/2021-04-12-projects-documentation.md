@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Migrating documentation to Docusaurus
-categories: ["documentation", "writing"]
+categories: ['documentation', 'writing']
 ---
 
 Writing a project's documentation is not as exciting as coding,

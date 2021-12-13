@@ -6,17 +6,14 @@
   import Header from "$lib/components/SEO/index.svelte"
 </script>
 
-
 <Header
 	slug="/"
 	title="Stack"
 	metadescription="This page is a compilation of all the tools that I use day-to-day in no particular order."/>
 
-  
 # Stack
 
 This page is a compilation of all the tools that I use day-to-day in no particular order.
-
 
 ### [Standard Notes](https://standardnotes.com/)
 
@@ -48,7 +45,6 @@ NetNewsWire is my RSS reader. It's open-source and perfectly syncs the list of f
 
 SvelteKit became my go-to framework for building websites after having used [GatsbyJS](https://www.gatsbyjs.com/) for years.
 SvelteKit doesn't force you into any particular way of building websites. You can choose on a per-page basis the type of rendering that you want: SSR, CSR, or Pre-render. Moreover, you get the option to disable Javascript completely from the rendered pages, and it has [adapters](https://github.com/sveltejs/kit/blob/master/documentation/docs/10-adapters.md) that adapt the websites to different infrastructure providers. And last but not least, the language for declaring the components alongside their styles and dynamic behaviors is closer to the standards and more aligned with best programming principles.
-
 
 ### [GitHub](https://github.com)
 

@@ -5,7 +5,6 @@ excerpt: A Monday blog post with some reflections about the current state of Tui
 tags: [tuist, open source, xcode, swift]
 ---
 
-
 I continue to be excited about Tuist.
 It's one of those things that brings me a lot of joy when I work on it.
 What makes me the most exciting is the challenge of abstracting Xcode intricacies that arise when Xcode projects grow.
@@ -15,11 +14,11 @@ Rails provides beautiful and simple abstractions for most of the features that a
 **What Tuist's abstractions will look like** is still to be defined,
 but I'm glad that we are on the right track to define them.
 
-One of the things that we plan to work on, 
-and that [Kas](https://twitter.com/kwridan) is leading, 
+One of the things that we plan to work on,
+and that [Kas](https://twitter.com/kwridan) is leading,
 is morph the architecture of the project into a more modular approach.
-That'll make the code safer, 
-easier to understand, 
+That'll make the code safer,
+easier to understand,
 and will increase the extendibility of the projects generation.
 He pushed the idea that we are pondering to the [tuist-labs](https://github.com/tuist/tuist-labs) tha we created to explore ideas outside the main repository.
 

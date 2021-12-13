@@ -1,6 +1,6 @@
 ---
-title: "Open source vendor-locking"
-categories: ["open source", "svelte", "vercel", "nextjs"]
+title: 'Open source vendor-locking'
+categories: ['open source', 'svelte', 'vercel', 'nextjs']
 ---
 
 A pattern I’ve been noticing a lot recently in the industry is investors-backed (and often Silicon Valley-based) companies using open-source to vendor-lock people into their products. We’ve seen [Vercel](https://vercel.com/) doing that through [NextJS](https://nextjs.org/), [Expo](https://expo.dev/) through [React Native](https://reactnative.dev/), and even [Microsoft](https://www.microsoft.com/) through [GitHub](https://github.com).

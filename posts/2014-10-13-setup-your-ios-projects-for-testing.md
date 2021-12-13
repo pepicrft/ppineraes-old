@@ -1,6 +1,6 @@
 ---
 title: Setup your iOS Projects for testing
-excerpt: "Learn how to setup your iOS for testing using the most popular testing libraries and how to integrate your project tests in the development flow."
+excerpt: 'Learn how to setup your iOS for testing using the most popular testing libraries and how to integrate your project tests in the development flow.'
 modified: 2014-10-13
 tags: [specta, kiwi, tdd, unittests, cocoapods]
 ---

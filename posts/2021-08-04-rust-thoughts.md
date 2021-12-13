@@ -1,21 +1,21 @@
 ---
 title: Some Rust thoughts
-categories: ["open-source", "rust", "learning", "education"]
+categories: ['open-source', 'rust', 'learning', 'education']
 layout: post
 ---
 
-A while ago, 
+A while ago,
 I started reading about the Rust programming language out of curiosity.
 Many things fascinated me about the language.
 It has a powerful dependency manager similar to the Swift Package Manager but more thoroughly designed.
 Unlike Swift,
 the compiled programming language I'm the most comfortable with,
-you can code Rust with your editor of choice and easily target several platforms because projects can be cross-compiled, 
+you can code Rust with your editor of choice and easily target several platforms because projects can be cross-compiled,
 and the standard library is available on all those platforms.
 This is not the case for Swift where leaving Xcode ruins your developer experience,
 and many utilities and primitives still live in macOS's `Foundation` framework.
 
-Because I did not end up using it, 
+Because I did not end up using it,
 I forgot most of the things that I learned.
 Therefore, I decided to get back to it, getting my hands dirty and applying the things I read about.
 This blog post is a braindump of some thoughts that I've got so far.
@@ -24,16 +24,16 @@ Expect more of these to come in the future.
 I like **its module system**.
 It reminds me of Ruby's but is more opinionated about the file structure.
 It encourages organizing the code in a modular fashion and ensures the file structure represents that structure.
-In Swift, 
+In Swift,
 for instance,
 namespaces can be created leveraging language's constructions,
 but the build system doesn't have any opinion on the file structure.
-As a result, 
+As a result,
 it's common to see file structures not matching the code's.
 
 The one thing that I haven't had the chance to work with yet is the **ownership-based** approach to memory management.
 I think I've got the idea,
-but it'll take some coding for the idea to click in my head and think in terms of *who owns what and for what*.
+but it'll take some coding for the idea to click in my head and think in terms of _who owns what and for what_.
 It's exciting to read that it's one of the features that makes Rust so unique because it leverages the build system to catch what otherwise would be runtime issues.
 
 The **standard library** looks pretty complete.

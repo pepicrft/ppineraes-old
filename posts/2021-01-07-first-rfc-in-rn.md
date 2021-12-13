@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "My first RFC in the React Native project"
-categories: ["reaxt-native", "open-source", "mobile"]
+title: 'My first RFC in the React Native project'
+categories: ['reaxt-native', 'open-source', 'mobile']
 ---
 
 Today I created an [RFC](https://github.com/react-native-community/discussions-and-proposals/issues/318) for the first time in the repository 🥳. I've pondering a bunch of ideas for a long time regarding how the experience building React Native apps could be improved and I finally gave them a structure and formalized them in a RFC.

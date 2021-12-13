@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Network Testing - Say hello to Szimpla"
+title: 'Network Testing - Say hello to Szimpla'
 excerpt: "Introduction post for the last library that I've been working on, Szimpla."
 modified: 2016-06021
 tags: [xcode, ios swift, objective-c, testing, appcode]

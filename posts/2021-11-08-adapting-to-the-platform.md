@@ -1,6 +1,6 @@
 ---
-title: "Adapting to a platform"
-categories: ["netlify", "sveltekit", "deployment", "developer tooling"]
+title: 'Adapting to a platform'
+categories: ['netlify', 'sveltekit', 'deployment', 'developer tooling']
 ---
 
 In a simplistic way,

@@ -1,10 +1,10 @@
 ---
-title: "A inflamed society"
-categories: ["social networks", "mental health"]
+title: 'A inflamed society'
+categories: ['social networks', 'mental health']
 ---
 
-The abundance of information the Internet brings, 
-and in particular social networks, 
+The abundance of information the Internet brings,
+and in particular social networks,
 are turning us into an inflamed society with the [cortisone](https://en.wikipedia.org/wiki/Cortisone) levels skyrocketing.
 Cortisone is the hormone associated to the stress and it has an indirect correlation with [Oxytocin](https://en.wikipedia.org/wiki/Oxytocin),
 an hormone that contributes to building social bonds.
@@ -17,8 +17,8 @@ I feel they get the worst of each of us.
 They have the ability to ruin a beautiful offline moment.
 They can also clutter your mind.
 It's not longer about enjoying the present, the offline, the boredom.
-It's all about sharing what you do, 
-reading about what happens, 
+It's all about sharing what you do,
+reading about what happens,
 and having an opinion on what people talk about.
 
 **Why am I talking about this now?**

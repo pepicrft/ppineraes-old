@@ -1,7 +1,7 @@
 ---
 layout: post
 title: We need more crafters
-tags: ["craft", "technology", "industry"]
+tags: ['craft', 'technology', 'industry']
 ---
 
 I think the technology industry needs more crafters.

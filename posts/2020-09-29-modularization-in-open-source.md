@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Modularization in open source projects
-tags: ["open-source", "software", "tuist", "craft"]
+tags: ['open-source', 'software', 'tuist', 'craft']
 ---
 
 I recently came across a blog post from Shopify where they share how they are componentize the main Rails application into smaller pieces with clearly defined boundaries and loose coupling between them. This made me think about the uFeatures architecture that I proposed back when I was iOS engineer at SoundCloud, and that I naturally inherited in Tuist.

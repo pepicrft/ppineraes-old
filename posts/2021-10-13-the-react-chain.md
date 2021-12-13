@@ -1,13 +1,13 @@
 ---
-title: "The React chain"
-categories: ["react", "javascript", "development"]
+title: 'The React chain'
+categories: ['react', 'javascript', 'development']
 ---
 
 I’ve been thinking a lot lately about the role [React](https://reactjs.org/) plays when building a web app. Companies like [GitHub](https://github.com) and [Shopify](https://shopify.com), both very successful software companies, introduced React recently in areas where **it makes sense**. This led me to the question: Is React and everything that comes with it (e.g., abstractions, tools, libraries) an influential piece in generating value for users?
 
 There are great things about the React stack. You can more easily **unit-test** the business logic of your frontend, **share and use components** that atomically encapsulate structure (HTML), behavior (JS), and style (CSS). Moreover, you have access to beautiful abstractions to do theme-based styling and even leverage the Typescript compiler to validate your styling object. React turns building a web app into a LEGO game where many blocks are already provided by the community.
 
-However, with React, projects pull in a chain of drawbacks that wouldn’t exist if we didn’t add React in the first place. The first of them is having an API. Sure, if you plan to have more clients in the future, an API is a must. But what if that’s not the future plan, or it’s far ahead? You end up optimizing for a future that might never come. 
+However, with React, projects pull in a chain of drawbacks that wouldn’t exist if we didn’t add React in the first place. The first of them is having an API. Sure, if you plan to have more clients in the future, an API is a must. But what if that’s not the future plan, or it’s far ahead? You end up optimizing for a future that might never come.
 
 In many cases, we end up going down the path of [GraphQL](https://graphql.org/) because libraries make it so convenient that we think we need it, but we don’t realize again that GraphQL was designed for a problem we are far from having. And as you probably know, but with an API, we introduce a new set of problems because we have two sources of truth for the data. Many Javascript libraries are trying to abstract that away through caching strategies. Some projects decide to go down the path of trying to model their state with yet another dependency, Redux, that ends up spreading like a virus and bringing more complexity to the frontend domain.
 

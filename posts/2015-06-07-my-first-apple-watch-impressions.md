@@ -45,4 +45,4 @@ And lastly, and as a runner, I expected a seamless experience with running apps 
 
 Have you tried an Apple watch and you would like to share your thoughts?
 
-[image-2]: https://cdn.macrumors.com/article-new/2015/05/Todoist-Apple-Watch.jpg?retina "Todoist Apple Watch App"
+[image-2]: https://cdn.macrumors.com/article-new/2015/05/Todoist-Apple-Watch.jpg?retina 'Todoist Apple Watch App'

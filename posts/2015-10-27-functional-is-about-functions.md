@@ -1,16 +1,17 @@
 ---
 layout: post
 title: Functional is about functions (Swift)
-excerpt: "Quick introduction to what Functional Programming in Swift is from the simple perspective of functions"
+excerpt: 'Quick introduction to what Functional Programming in Swift is from the simple perspective of functions'
 modified: 2015-10-27
 tags: [functional, functions, programming, reactive, swift]
 ---
 
-Since Swift 2.0 was launched this term has become very popular. You attend conferences and this is usually the topic most of the people talk about. You see people even struggling for its use in their apps, really overwhelming for it. Why? It’s **something that can be easily done with Swift but it’s not something new** *(a lot of languages where already offering fully functional paradigms before)*
+Since Swift 2.0 was launched this term has become very popular. You attend conferences and this is usually the topic most of the people talk about. You see people even struggling for its use in their apps, really overwhelming for it. Why? It’s **something that can be easily done with Swift but it’s not something new** _(a lot of languages where already offering fully functional paradigms before)_
 
 > Ey Pedro! Do you use functional in your apps? I wanna start using it, I’m watching a lot of talks and reading a couple of books. What do you think about? Should I use it?
 
 ## Maths
+
 Functions is not anything new, back in the school we were told that a function is something that has some input arguments or variables and after some operations they return a value. From the Engineer perspective I was told that these was systems or black boxes that depend on an input stream of data and the output only depends on the input in each instance (no feedback cycle systems)
 
 > f(x, y) = x + y
@@ -22,29 +23,29 @@ Thinking about it the concept isn’t complex at all, but… we were given more 
 
 ## Object oriented programming
 
-We started grouping these functions into something called classes and assigning it a state which is created when and instance of this class is created. We still have functions but they seem to belong now to something and in languages like Objective-C *we cannot extract them from its scope (ask a Javascript developer about functions and contexts and you’ll get surprise about what they’re able to do)*. We sticked to Object Oriented principles and we set ourselves far from the basic function concept we saw above.
+We started grouping these functions into something called classes and assigning it a state which is created when and instance of this class is created. We still have functions but they seem to belong now to something and in languages like Objective-C _we cannot extract them from its scope (ask a Javascript developer about functions and contexts and you’ll get surprise about what they’re able to do)_. We sticked to Object Oriented principles and we set ourselves far from the basic function concept we saw above.
 Object Oriented programming introduces a grade of flexibility and mutability working with objects and its functions. I’m sure most of you have coded something like this:
 
-```swift 
+```swift
 class ApiClient {
-  
+
   // MARK: - Attributes
-  
+
   var token: String?
-  
+
   // MARK: - Init
-  
+
   init(token: String) {
     self.token = token
   }
-  
+
   // MARK: - Public
-  
+
   func reset() {
     token = nil
     cancelRequests()
   }
-  
+
   func execute(request: Request, completion: (Result<AnyObject, Error>) -> Void) {
     let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
     dispatch_async(dispatch_get_global_queue(priority, 0)) {
@@ -55,20 +56,20 @@ class ApiClient {
     	}
     }
   }
-  
+
   // MARK: - Private
-  
+
   func authenticatedRequest(request: Request) -> Request {
     // Authenticating
   }
 }
 ```
 
-Let’s analyse the problems the implementation above presents. It’s a typical pattern on mobile apps and I’ve seen lots of workarounds facing different unexpected states that weren’t taken into account when it was implemented *(Note: This implementation can be more secure with Swift immutability concepts but I just copied how it would be using the same Objective-C format)*
+Let’s analyse the problems the implementation above presents. It’s a typical pattern on mobile apps and I’ve seen lots of workarounds facing different unexpected states that weren’t taken into account when it was implemented _(Note: This implementation can be more secure with Swift immutability concepts but I just copied how it would be using the same Objective-C format)_
 
-- **State mutability:** We have a function that depends on an input value, Request *(great!)* and also depend on two other variables, the token status and the time *(yes, we added asynchronous inside)*. We have three time states *(before asynchronous, in asynchronous block, and in main thread block)* and two variable states *(valid / invalid)*. Grouping them we have two states for every time instance. Do we usually cover all of them when we implement a function like that? Probably **not**. If our execution reaches any of the states our app won’t know what to do or with treat it as an other existing contemplated case.
+- **State mutability:** We have a function that depends on an input value, Request _(great!)_ and also depend on two other variables, the token status and the time _(yes, we added asynchronous inside)_. We have three time states _(before asynchronous, in asynchronous block, and in main thread block)_ and two variable states _(valid / invalid)_. Grouping them we have two states for every time instance. Do we usually cover all of them when we implement a function like that? Probably **not**. If our execution reaches any of the states our app won’t know what to do or with treat it as an other existing contemplated case.
 
-*Note: Adding threading logic inside functions adds an extra complexity because by the time these closures are executed the state might have changed.*
+_Note: Adding threading logic inside functions adds an extra complexity because by the time these closures are executed the state might have changed._
 
 - **External control:** In relation with the previous, this mutability is mostly controlled externally, we end up using a [Singleton](https://en.wikipedia.org/wiki/Singleton_pattern) pattern used all around the app. When we login we set the token, when we logout, we clean the token. This adds some uncertainty to our internal implementation. What happens if I try to execute the request and someone removed the token, for example resetting the client?
 
@@ -82,7 +83,7 @@ I’ve seem the problems above manifesting when the user logouts and you want to
 
 Let’s bring our function concept and make it simpler. Remember:
 
-```swift 
+```swift
 func execute(request: Request, session: Session, completion: (Result<AnyObject, Error>) -> Void) {
   let authenticatedRequest: (Request, Session) -> (Request) = { request in
     // Authenticates the request
@@ -117,7 +118,7 @@ With OOP it’s seems easier to organise our code logic, we have models, control
 **Building namespaces with Structs**
 My suggestion about this is use structs to create namespaces in Swift grouping the functions that are related to the same business logic. For example if you have a set of functions related to network. Group them under Network as shown below:
 
-```swift 
+```swift
 struct Network {
   static func execute(request: Request, completion: (Result<AnyObject, Error>) -> Void)
   static func authenticate(username: String, password: String, completion Result<Session, Error> -> Void)
@@ -125,6 +126,7 @@ struct Network {
 ```
 
 ## Recommendations
+
 If you’re thinking about using functional approaches in your Swift code but you don’t know how, or what to do don’t worry, it’s not something you have to necessarily do to get your app working, but it’s something definitively will help your code to be more reusable, robust, and stable. From my experience try to keep the following points in mind:
 
 - **Think on problems as functions.** If problems are too big, think about them as small problems combined.

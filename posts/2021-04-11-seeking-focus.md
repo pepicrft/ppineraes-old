@@ -1,6 +1,6 @@
 ---
 title: Seeking focus
-categories: ["focus", "life"]
+categories: ['focus', 'life']
 ---
 
 I recently posted on Twitter that I'd take a break from it.

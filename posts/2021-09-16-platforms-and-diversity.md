@@ -1,6 +1,6 @@
 ---
-title: "Developer platforms and diversity"
-categories: ["development", "saas", "software"]
+title: 'Developer platforms and diversity'
+categories: ['development', 'saas', 'software']
 ---
 
 If we think about how tech companies build products these days,
@@ -17,10 +17,10 @@ and we expect everyone to embrace them.
 Having a simplified version of the world is **convenient for the business**.
 Still, it might lead to severe problems like the [Myanmar](https://www.nytimes.com/2018/10/15/technology/myanmar-facebook-genocide.html) genocide incited on Facebook or the [e-scooter chaos](https://www.berliner-zeitung.de/en/new-laws-could-end-e-scooter-chaos-li.116188) in Berlin.
 
-As someone who works in tech, 
-this annoys me greatly, 
+As someone who works in tech,
+this annoys me greatly,
 especially when the company prides itself upon its diversity efforts and building a product that rejects world diversity.
-*How crazy is that?*
+_How crazy is that?_
 
 I understand building as many product versions as nuances exist in the world would be cumbersome.
 Still, companies could focus on the domain's core and provide a platform for **developers to codify the diversity of the world**.

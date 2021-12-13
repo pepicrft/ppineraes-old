@@ -11,15 +11,15 @@ As you might know, websites can include a manifest file that associates a websit
 
 ```json
 {
-  "applinks": {
-    "apps": [],
-    "details": [
-      {
-        "appID": "com.mycompany.App",
-        "paths": ["*"]
-      }
-    ]
-  }
+	"applinks": {
+		"apps": [],
+		"details": [
+			{
+				"appID": "com.mycompany.App",
+				"paths": ["*"]
+			}
+		]
+	}
 }
 ```
 

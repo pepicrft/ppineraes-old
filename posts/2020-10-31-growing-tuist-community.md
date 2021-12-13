@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Growing Tuist's community
-tags: ["tuist", "open-source", "community"]
+tags: ['tuist', 'open-source', 'community']
 excerpt: In this blog post, I share my experience building the Tuist community. I talked about the things that have worked well, and the areas where there's still some room for improvement.
 ---
 

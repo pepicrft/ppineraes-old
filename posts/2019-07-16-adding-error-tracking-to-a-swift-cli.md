@@ -11,17 +11,16 @@ and as a consequence the imperfection manifests in the software in the shape of 
 Languages like Swift can help us write free-of-bugs software,
 but they'll never be able to help us get rid of them entirely.
 
-
 When bugs happen,
 it's crucial to be notified automatically with the right information that helps us debug and fix the bug quickly.
 That's why platforms like [Crashlytics](https://try.crashlytics.com/) or [Sentry](https://sentry.io) exist.
-They provide an SDK to add to your projects that collect handled and unhandled errors and report them to a web service. 
-If you are an iOS developer, 
+They provide an SDK to add to your projects that collect handled and unhandled errors and report them to a web service.
+If you are an iOS developer,
 you are most likely familiar with them.
 
 [Tuist](https://tuist.io) didn't have error reporting,
 making it hard to know when errors happened and why.
-Moreover, 
+Moreover,
 we were relying on users to know about bugs.
 If they didn't create GitHub issues,
 we had no way to know that they were facing bugs while using the tool.
@@ -42,7 +41,7 @@ which contain the dynamic framework attached to it.
 
 > Setting up error tracking with a static framework it's also possible, but in this post I'll focus on the dynamic approach.
 
-Place the framework under `./Frameworks/` *(e.g. `./Frameworks/Sentry.framework`)*.
+Place the framework under `./Frameworks/` _(e.g. `./Frameworks/Sentry.framework`)_.
 
 ## Generate an Xcode project that links against the framework
 
@@ -60,9 +59,9 @@ FRAMEWORK_SEARCH_PATHS=$(inherited) $(SRCROOT)/Frameworks
 OTHER_LDFLAGS = $(inherited) -framework "Sentry"
 ```
 
-- **LD\_RUNPATH\_SEARCH\_PATHS**: Defines a list of directories where the dynamic linker can look up the linked frameworks. We are adding `$(SRCROOT)/Frameworks`, which is the `Frameworks` directory relative to the path where the generated Xcode project is.
-- **FRAMEWORK\_SEARCH\_PATHS**: Defines the directories that contain the frameworks to be linked during the compilation process.
-- **OTHER\_LDFLAGS:** With this setting we include the linker flag `-framework Sentry` to link against the Sentry framework. You'll need to replace Sentry with the name of your framework.
+- **LD_RUNPATH_SEARCH_PATHS**: Defines a list of directories where the dynamic linker can look up the linked frameworks. We are adding `$(SRCROOT)/Frameworks`, which is the `Frameworks` directory relative to the path where the generated Xcode project is.
+- **FRAMEWORK_SEARCH_PATHS**: Defines the directories that contain the frameworks to be linked during the compilation process.
+- **OTHER_LDFLAGS:** With this setting we include the linker flag `-framework Sentry` to link against the Sentry framework. You'll need to replace Sentry with the name of your framework.
 
 With the file `MyTool.xcconfig` in the project directory, we can run the following command:
 
@@ -101,7 +100,7 @@ swift build \
 
 If we run that command, we should get the tool compiled and linked dynamically against the framework.
 
-##  Add the runtime path
+## Add the runtime path
 
 If we distribute the binary under `.build/release/MyTool`,
 users will get an error when they try to run it from the terminal.
@@ -109,6 +108,7 @@ Since the framework is dynamically linked,
 the linker will try to link the framework at runtime and will fail because it won't be able to find it.
 
 To fix the issue, you need to make sure of 2 things:
+
 - The frameworks is copied as part of the installation.
 - The directory where the framework is placed is part of the binary runtime search paths.
 
@@ -123,11 +123,10 @@ After running that command,
 and having the error tracking framework in that directory,
 you should be able to run the tool successfully.
 
-
 ## Conclusions
 
 As we have seen,
-the process is not as straightforward as it could be with other programming languages like Swift. 
+the process is not as straightforward as it could be with other programming languages like Swift.
 The complexity comes from the fact that the SwiftPM doesn't provide an API to link against existing pre-compiled dynamic frameworks, nor a way to handle the installation of the tools and its dependencies in the user's environment.
 
 I hope you found the blog post useful and that it encourages you to add error tracking to your command line tools written in Swift.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Developer experience and Javascript
-tags: ["ux", "tooling", "javascript"]
+tags: ['ux', 'tooling', 'javascript']
 ---
 
 In the past few months, I’ve been interacting a lot with the Javascript ecosystem and its tooling. I’ve been doing it mostly at Shopify, where React Native has become our default technology for building mobile apps. During this time, there have been many mind-blowing moments after seeing what one could achieve with Javascript, but they came at the cost of a lot of frustration. Let me unfold what I mean by frustration and why I think it’s challenging building great developer experiences upon Javascript’s foundation.

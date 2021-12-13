@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Thinking in terms of problems
-tags: ["product development", "developer tooling", "software"]
+tags: ['product development', 'developer tooling', 'software']
 ---
 
 One of the things that I find the most challenging these days when building tools for developers is **thinking in terms of problems**.

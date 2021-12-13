@@ -25,7 +25,7 @@ If you have worked with Xcode projects before, you might know what `Info.plist` 
 </plist>
 ```
 
-`Info.plist` files are created when developers create a new target *(e.g. a new iOS application)*. Most of the entries in the file are necessary but they are barely modified after the file is created. The entries that developers change the most is the version and build numbers. For others like the main storyboard or the icon, Xcode provides a UI interface to change the value.
+`Info.plist` files are created when developers create a new target _(e.g. a new iOS application)_. Most of the entries in the file are necessary but they are barely modified after the file is created. The entries that developers change the most is the version and build numbers. For others like the main storyboard or the icon, Xcode provides a UI interface to change the value.
 
 As you might know, one of the aims of [Tuist](https://tuist.io) is abstracting away the details that we believe developers shouldn't be exposed to. I think those `Info.plist` values that are barely touched are a perfect candidate for abstraction.
 
@@ -38,6 +38,7 @@ enum InfoPlist {
     static func productDefaults(extend: [String: Any]) -> InfoPlist
 }
 ```
+
 - **file:** If the user project has already an `Info.plist` file and they'd like to continue maintaining it themselves, this is the best option. The target will be generated accordingly to point to the local file. Notice that this is the only option that Tuist offers currently.
 - **dictionary:** If the wants to define the content of the file in the project manifest and let Tuist generate the `Info.plist` file this is the option. When Tuist generates the project, it'll also generate the file right next to the project in a directory that contains this and other generated files.
 - **productDefaults:** As I mentioned earlier, developers barely modify the values in that file. The one that they usually modify when they release a new version of the app is the build and version numbers. This option tells Tuist to use the default values of the target product, allowing the user to extend them as needed.
@@ -90,7 +91,6 @@ let framework = Target(name: "MyFramework", infoPlist: [
 ])
 ```
 
-
 By giving Tuist more control over those files, we can **run validations** and verify that they contain the required attributes with the right values. As an example, watchOS extensions have a strict requirement when it comes to the bundle id of the extension. Since that's an attribute configured in the `Info.plist`, we could verify that the value is right according to the watch app they are associated to.
 
 Although developers can git-ignore those files because they get generated automatically when they run Tuist, I'd encourage them to keep them in the repository so that developers can checkout any revision of the project and compile it with Xcode without having to install Tuist.
@@ -108,5 +108,3 @@ An idea that I'm still pondering is how to structure the directory that contains
 I'll sleep over the idea experiment with it to see how it feels in practice. If you have an opinion on it and don't mind sharing, I'd appreciate it a lot. Don't hesitate to ping me on Twitter, send me an email, our join [Tuist's Slack](https://slack.tuist.io) where you can talk to other contributors and maintainers.
 
 I wanted to start coding on my flight ✈️ to Alicante but unfortunately, I forgot to run `swift package generate-xcodeproj` and now I can't fetch the dependencies to do some coding 😕.
-
-

@@ -1,6 +1,6 @@
 ---
-title: "On evolving opinions"
-categories: ["reflection"]
+title: 'On evolving opinions'
+categories: ['reflection']
 ---
 
 I recently came across a tweet that suggested me to undo my blog post on [Web3](/2021/11/29/exploring-web3) after sharing some bad things I'd uncovered in the technology.
@@ -20,7 +20,7 @@ You either like it or hate it.
 
 Because I **don't want to be biased by my own static opinions**,
 I avoid engaging in these discussions and keep and open mindset.
-Moreover, 
+Moreover,
 since I [value openness](/about) and I enjoy sharing my learnings and opinions,
 that sometimes means seeing seemingly contradictory opinions at different points in time.
 And that's completely fine.
@@ -37,9 +37,9 @@ what are the limitations,
 and how Apple's interests drive the direction of the project.
 
 I'm currently forming opinions around the nature of the technologies and tools they use.
-*Do I want to continue using and supporting open-source technologies with business interests baked into it?
+_Do I want to continue using and supporting open-source technologies with business interests baked into it?
 Is my relationship with open-source sustainable long-term?
-Do I see myself doing the same thing for the next 10 years? 20 years?*
+Do I see myself doing the same thing for the next 10 years? 20 years?_
 
 **My days are filled with questions**,
 and the answers to those lead to opinions and more questions.

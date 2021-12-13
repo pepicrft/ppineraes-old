@@ -55,5 +55,5 @@ Lastly and not less important, every Open Source project requires one thing, **c
 
 Hope you have enjoyed the article. If you’re another Open Source geek and you would like to comment any other point you consider is important also when working for these projects, feel free to add a comment or contact me, [pedropb@hey.com][2].
 
-[1]: http://semver.org/ "Semanting Versioning"
+[1]: http://semver.org/ 'Semanting Versioning'
 [2]: mailto://pedropb@hey.com

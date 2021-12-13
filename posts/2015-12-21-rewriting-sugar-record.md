@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Rewriting SugarRecord, 2.0"
-excerpt: "I explain in this post how was the process of rewriting SugarRecord, a CoreData/Realm wrapper for Swift."
+title: 'Rewriting SugarRecord, 2.0'
+excerpt: 'I explain in this post how was the process of rewriting SugarRecord, a CoreData/Realm wrapper for Swift.'
 modified: 2015-12-06
 tags: [sugarrecord, realm, coredata]
 ---

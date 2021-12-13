@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Swift and Objective-C playing together"
-excerpt: "Start using Swift in your Objective-C projects. Avoid some headaches with these useful tips and advices for the communication layer between your Objective-C code base and your future Swift implementations"
+title: 'Swift and Objective-C playing together'
+excerpt: 'Start using Swift in your Objective-C projects. Avoid some headaches with these useful tips and advices for the communication layer between your Objective-C code base and your future Swift implementations'
 modified: 2014-12-09
 tags: [swift, objective-c, integration, cocoapods]
 ---

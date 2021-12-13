@@ -1,26 +1,26 @@
 ---
 title: "Spain, it's not time to be reunited (yet)"
-categories: ["life"]
+categories: ['life']
 ---
 
-As some of you might know, 
+As some of you might know,
 we’ve been in Barcelona looking for a flat to relocate from Berlin for the past few weeks.
 A few things happened during the COVID19 pandemic that prompted us to think about whether we wanted to stay in Berlin longer.
 In particular,
 Shopify became a distributed company and opened a legal entity in Spain.
 Furthermore, my wife got a job at Shopify.
-*What are we doing here?*
+_What are we doing here?_
 The idea of moving to Spain sounded very appealing:
-*no language barrier,
+_no language barrier,
 better weather,
- and more healthy food.*
+and more healthy food._
 It felt the natural next step for us,
 and therefore we decided to spend weeks in Barcelona to see how it felt being back here.
 
 It took weeks of many questions and answers to finally admit **it was not the right time for us to be back**.
 
 What follows is a brain dump of what led us to make that decision.
-Note that this is based on my experience, 
+Note that this is based on my experience,
 and therefore it's subjective.
 
 First, it's very **comfortable** living here.
@@ -41,7 +41,7 @@ Spain is far distant from other countries in Europe,
 which also means good life to us.
 
 **What are we doing then?**
-For now, 
+For now,
 we'll go back to Berlin.
 We need to rest in what's our home.
 As weird as it sounds,
@@ -49,5 +49,3 @@ we miss Berlin's weather.
 It's been too humid and hot these days in Barcelona _(we might have become Germans)_.
 The plans for later this year or early next are to visit [**Amsterdam**](https://en.wikipedia.org/wiki/Amsterdam),
 to assess it as our potential next home.
-
-

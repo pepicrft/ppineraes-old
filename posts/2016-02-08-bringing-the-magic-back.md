@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "The spare time project journey. Why I started GitDo"
-excerpt: "Personal reflexion about myself and why I came up with the idea of investing my spare time working on GitDo"
+title: 'The spare time project journey. Why I started GitDo'
+excerpt: 'Personal reflexion about myself and why I came up with the idea of investing my spare time working on GitDo'
 modified: 2016-02-07
 tags: [setup, xcode, script]
 ---

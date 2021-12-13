@@ -1,26 +1,26 @@
 ---
-title: "On cutting off some dopamine dependency"
-categories: ["mental health", "health", "technology"]
+title: 'On cutting off some dopamine dependency'
+categories: ['mental health', 'health', 'technology']
 ---
 
-Over time, my relationship with the Internet has turned me into a dopamine-dependent. 
+Over time, my relationship with the Internet has turned me into a dopamine-dependent.
 I’ve reached a point when my body often has a physical presence in the offline world throughout the day, but my brain wanders in the online space.
 
-*Should I tweet about this? What if I write a blog post about that? This is boring; let me check what people are talking about on Twitter. Look at that beautiful scene; I’ll take and share a photo on Instagram. This is hilarious; I’ll tweet what happened to me. I built this open-source project, I’ll share it broadly to gauge people’s reactions.*
+_Should I tweet about this? What if I write a blog post about that? This is boring; let me check what people are talking about on Twitter. Look at that beautiful scene; I’ll take and share a photo on Instagram. This is hilarious; I’ll tweet what happened to me. I built this open-source project, I’ll share it broadly to gauge people’s reactions._
 
-I was once gifted the Internet awesomeness, and now I gift my time and energy back to the Internet for free. 
+I was once gifted the Internet awesomeness, and now I gift my time and energy back to the Internet for free.
 In the meantime, life goes by, and I miss the opportunities to do fulfilling offline and social activities. **Is this sustainable long-term?** I don't think it is.
 
-The more I run on the **dopamine treadmill**, 
-the faster it goes, 
+The more I run on the **dopamine treadmill**,
+the faster it goes,
 and the more I need to have a sense of fulfillment.
-I've got online friends that *I feel* I need to feed with photos and stories,
-some followers on Twitter *I feel* I need to share updates with,
-a handful of open-source projects *I feel* I need to maintain.
-There are also newsletters *I feel* I have to keep up with,
-Reddit discussions *I feel* might be relevant to me,
-and podcasts *I feel* it'd be great to listen to.
-I become [blinker](https://en.wikipedia.org/wiki/Blinkers_(horse_tack)),
+I've got online friends that _I feel_ I need to feed with photos and stories,
+some followers on Twitter _I feel_ I need to share updates with,
+a handful of open-source projects _I feel_ I need to maintain.
+There are also newsletters _I feel_ I have to keep up with,
+Reddit discussions _I feel_ might be relevant to me,
+and podcasts _I feel_ it'd be great to listen to.
+I become [blinker](<https://en.wikipedia.org/wiki/Blinkers_(horse_tack)>),
 and consequently, I miss out on the beauty of slowness, the present, and the beauty of the offline world.
 It's all me, my ego, the dopamine, and what I feel I need to do.
 It's all feelings.
@@ -32,7 +32,7 @@ Rockstars take the main stage,
 while the audience dream of becoming one in the future.
 I don't need to learn how to play an instrument,
 nor find a band or a manager;
-I need time and some tools that people are already addicted to *(e.g. Twitch, Twitter, TikTok)*.
+I need time and some tools that people are already addicted to _(e.g. Twitch, Twitter, TikTok)_.
 If I build my audience, I can play in the main stages too.
 
 **The Internet has paved the way to achieve a dopamine-dependent life whose meaning come from other people worshipping you and your work.**

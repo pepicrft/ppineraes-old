@@ -5,15 +5,15 @@ excerpt: I've been avoiding macOS development for no reason. This blog post is a
 tags: [comfortable, macos, development]
 ---
 
-*How has your week been?* It's Friday, I'm having a sip of the first morning coffee, and I thought it'd be a good idea to write something down in my blog post. For years, I've been focusing on building iOS apps and tools around it. Developing macOS was always a far remote thing to me, and somehow postponed every time the idea of doing something for macOS came to my mind.
+_How has your week been?_ It's Friday, I'm having a sip of the first morning coffee, and I thought it'd be a good idea to write something down in my blog post. For years, I've been focusing on building iOS apps and tools around it. Developing macOS was always a far remote thing to me, and somehow postponed every time the idea of doing something for macOS came to my mind.
 
-*Have you ever procrastinated to not push yourself out of comfort zone?*  
-That's exactly what happened to me with macOS. 
-I felt comfortable with iOS and its frameworks, 
+_Have you ever procrastinated to not push yourself out of comfort zone?_  
+That's exactly what happened to me with macOS.
+I felt comfortable with iOS and its frameworks,
 so the idea of confronting new frameworks and paradigms held me back from trying.
 
-I recently started building an app with some friends, 
-Angle, 
+I recently started building an app with some friends,
+Angle,
 an app that will make it easier for software teams to collaborate when building features.
 This time I decided it was the time to get my hands dirty with macOS.
 To my surprise,
@@ -21,7 +21,7 @@ it's not that different as I thought it would be.
 There's no reason of which being scared.
 I actually realized that I enjoy it a lot.
 It reminds me back 8 years ago when I was playing with iOS for the first time.
-Some APIs are different, 
+Some APIs are different,
 some have some weird intricacies exposed and merely documented,
 but it's something one can easily learn with a bit of effort.
 

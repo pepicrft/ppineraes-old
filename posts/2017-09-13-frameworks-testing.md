@@ -5,17 +5,17 @@ excerpt: This post introduces an approach to share testing data and mocks from y
 tags: [xcodeproj, swift, xcode]
 ---
 
-If you build your apps in a modular manner using Swift, you have probably been in the situation where a `ModuleX` defines some mocks or testing data for its tests in its tests target, but they cannot be shared to be used from other tests targets, playgrounds, example apps... *(essentially because they cannot import a tests target)* With Objective-C it wasn't an issue at all because we could mock the interface of our dependencies at runtime with just one line of code. In Swift, the definition of mocks or data for testing requires some manual work *(unless you have some code generation in place)* that we don't want to have to do it more than once. Listed below you can see some scenarios where you face this issue:
+If you build your apps in a modular manner using Swift, you have probably been in the situation where a `ModuleX` defines some mocks or testing data for its tests in its tests target, but they cannot be shared to be used from other tests targets, playgrounds, example apps... _(essentially because they cannot import a tests target)_ With Objective-C it wasn't an issue at all because we could mock the interface of our dependencies at runtime with just one line of code. In Swift, the definition of mocks or data for testing requires some manual work _(unless you have some code generation in place)_ that we don't want to have to do it more than once. Listed below you can see some scenarios where you face this issue:
 
 - Playground of `ModuleX` wants to access a `Track.testData()` defined in `ModuleXTests`.
 - Example app of `ModuleX` wants to access a `Track.testData()` defined in `ModuleXTests`.
-- Some tests from `ModuleY`, that depends on `ModuleX`,  wants to access `MockClient` defined in `FrameworkXTests`.
+- Some tests from `ModuleY`, that depends on `ModuleX`, wants to access `MockClient` defined in `FrameworkXTests`.
 
 > `Module` stands for `Library` or `Framework`, depending on your project setup.
 
 We can overcome this issue by adding another module, that depends on `ModuleX` and exposes your module testing elements, `ModuleXTesting`. Since we would like to use the components in there from `Playgrounds` and example apps it's important that `ModuleXTesting` doesn't depend on the framework `XCTest`. In the snippet below you can see two examples, one of them shows how we use `ModuleXTesting` to define a mock for a protocol, and the other one how we extend an entity to provide testing data.
 
-```swift 
+```swift
 // ModuleX - MyProtocol.swift
 public protocol MyProtocol {
   func sync() throws
@@ -53,4 +53,4 @@ extension Entity {
 
 > Note: Defining testing data or mocks in a new module applies only to the elements with **public** access. Those are the ones that are accessed from outside the framework tha contains them.
 
-I hope you find the tip useful. If you have gone through this challenge before, I'd love to know how you overcame the issue in your projects. 
+I hope you find the tip useful. If you have gone through this challenge before, I'd love to know how you overcame the issue in your projects.

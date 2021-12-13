@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Module caching in Xcode projects
-tags: ["xcode", "tuist", "caching", "build times"]
+tags: ['xcode', 'tuist', 'caching', 'build times']
 excerpt: Bazel and Buck is the solution large companies have adopted to make Xcode build fast. However, it's complex and not accessible to medium and small companies. In this blog post, I share the approach Tuist is taking and how it's inspired by tools the community is already using.
 ---
 

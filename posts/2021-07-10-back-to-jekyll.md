@@ -1,6 +1,6 @@
 ---
 title: Back to Jekyll
-categories: ["ruby", "jekyll", "blogging"]
+categories: ['ruby', 'jekyll', 'blogging']
 ---
 
 I recently changed my stand in regards to the technologies that I use when building software.
@@ -8,9 +8,9 @@ In particular,
 I decided to **minimize the amount of Javascript** that I use in my projects.
 In my experience,
 Javascript is usually synonym of indirection, complexities, and instability:
-*dependency updates that blow up your whole stack,
+_dependency updates that blow up your whole stack,
 cryptic build errors that are hard to debug,
-setup that is hard to reason about and unnecessarily complex.*
+setup that is hard to reason about and unnecessarily complex._
 
 On the other side,
 [Ruby](https://www.ruby-lang.org/en/) and its ecosystem is more harmonious and peaceful.

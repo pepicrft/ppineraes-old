@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Anxiety-free working
-tags: ["anxiety", "tech industry"]
+tags: ['anxiety', 'tech industry']
 ---
 
 I feel it really hard to work these days without feeling anxious.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A better signing experience in Xcode
-tags: ["tuist", "signing", "xcode", "fastlane"]
+tags: ['tuist', 'signing', 'xcode', 'fastlane']
 ---
 
 A few days ago, [Marek](https://twitter.com/marekfort) decided to take on a proposal that I made for Tuist a while ago, **management of certificates and provisioning profiles**.
@@ -16,10 +16,9 @@ At **project generation time**, Tuist will decrypt and validate them, and config
 
 Moreover, to eliminate the need to configure anything on the user end, we'll establish the following naming convention:
 
-- **Certificates:** Configuration.p12 *(e.g Debug.p12)*
-- **Profiles:** Target.Configuration.mobileprovision *(e.g MyApp.Debug.mobileprovision)*
+- **Certificates:** Configuration.p12 _(e.g Debug.p12)_
+- **Profiles:** Target.Configuration.mobileprovision _(e.g MyApp.Debug.mobileprovision)_
 
 Thanks to that convention, the configuration will be zero, and Tuist will know which certificates and profiles to take from `Tuist/Signing`, for each of the targets that are part of the dependency graph.
 
 Project generation is a powerful tool to help teams with their scaling issues yet we are just starting to see its real benefits. Check out [the docs](https://tuist.io/docs/usage/getting-started/) to know how to adopt it in your projects.
-

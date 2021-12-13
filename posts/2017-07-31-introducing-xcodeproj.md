@@ -9,9 +9,9 @@ Today I’m pleased to announce a new open source project I’ve been working on
 
 ## Motivation
 
-This year, I’ve been very passionate about leveraging modularization to overcome scalability issues in mobile projects/teams. For every new module that I created I had to always go through the same manual steps: create the project, set the config, link dependencies, update the schemes… It was a very repetitive process, and it was easy to forget any of the steps, having some inconsistencies in the setup. I tried automating it by coming up with a script that clones a template Xcode project, and modifies some values in it. Although it solves the problem, it does it partially. It’s not flexible at all since it was hard to extend the template *(you had to update the original one, or create copies of it according to your requirements)*.
+This year, I’ve been very passionate about leveraging modularization to overcome scalability issues in mobile projects/teams. For every new module that I created I had to always go through the same manual steps: create the project, set the config, link dependencies, update the schemes… It was a very repetitive process, and it was easy to forget any of the steps, having some inconsistencies in the setup. I tried automating it by coming up with a script that clones a template Xcode project, and modifies some values in it. Although it solves the problem, it does it partially. It’s not flexible at all since it was hard to extend the template _(you had to update the original one, or create copies of it according to your requirements)_.
 
-At some point I thought, what if there was a way to specify the project that you want, and there was a tool that would generate it for you? Something like: *“I want a project, with an iOS app, an iMessage extension, and a framework to share some code between them”*.
+At some point I thought, what if there was a way to specify the project that you want, and there was a tool that would generate it for you? Something like: _“I want a project, with an iOS app, an iMessage extension, and a framework to share some code between them”_.
 
 The closest tool that I found was [xcake](https://github.com/jcamp). It does exactly what I was thinking of. It’s written in Ruby and it uses a gem from the CocoaPods team, [xcodeproj](https://github.com/CocoaPods/Xcodeproj) that allows you modifying your Xcode projects and workspaces. Although I’ve done some Ruby before, and I know the APIs a little bit, I’m not very familiar with them and I wanted to experiment with Swift. I thought it would be a good idea to come up with something written in Swift, that other Swift developers could use to build their own tools on top of a foundational API. I started writing the swift version of [xcodeproj](https://github.com/xcodeproj).
 
@@ -49,13 +49,14 @@ While I was working on xcodeproj I got a few ideas about how to use xcodeproj. H
 - **TDD:** I was fascinated when I saw [scala-sbt](http://www.scala-sbt.org/), the build tool for Scala. When you use it in your projects it has a mode that detects changes in files and runs only the tests of the files that have been impacted by those changes. I’d like to port that idea to the Xcode build system and being able to do something similar. That would allow developers iterate faster with confidence.
 
 ## Thanks
+
 This project wouldn’t have been possible without all the resources and open source projects that I’ve listed in the sections below. Also, I’d like to thank [@yonaskolb](https://twitter.com/yonaskolb), first official user of xcodeproj that is leveraging it to build [XcodeGen](https://github.com/yonaskolb/XcodeGen), a tool for generating Xcode projects from a specification file. He’s contributed a lot to the library.
 Also thanks to @saky and @sergigram reviewing the post.
 
 Also thanks to [@saky](https://twitter.com/saky) and [@sergigram](https://twitter.com/sergigram) reviewing the post.
 
-
 ## References
+
 - [Swift Package Manager — Xcodeproj](https://github.com/apple/swift-package-manager/tree/master/Sources/Xcodeproj)
 - [Facebook Buck](https://buckbuild.com/javadoc/com/facebook/buck/apple/xcode/xcodeproj/package-summary.html)
 - [Pbxproj identifiers](https://pewpewthespells.com/blog/pbxproj_identifiers.html)

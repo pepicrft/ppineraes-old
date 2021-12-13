@@ -1,6 +1,6 @@
 ---
 title: Contributors' first experience
-categories: ["open-source", "contributions"]
+categories: ['open-source', 'contributions']
 ---
 
 When building open-source software,
@@ -56,5 +56,5 @@ We are luckyto have a very supportive group of contributors that are always open
 One of the things I'd like to improve **next** is the configuration of the environment to ensure everyone's environment is consistent.
 For example, ensure everyone is using the same Ruby, NodeJS, and Swift versions.
 We'll balance building for contributors and users.
-Both make Tuist the best tool of its class, 
+Both make Tuist the best tool of its class,
 and therefore both need the same level of attention and support.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A shift towards product development
-tags: ["product mindset", "tech", "product development", "product"]
+tags: ['product mindset', 'tech', 'product development', 'product']
 ---
 
 Working on building tools for developers has helped me realize that what I like even more than coding is going through the product thinking process.

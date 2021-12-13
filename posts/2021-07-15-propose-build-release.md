@@ -1,6 +1,6 @@
 ---
 title: Propose, prototype, and build
-categories: ["organization", "management", "planning"]
+categories: ['organization', 'management', 'planning']
 ---
 
 One of the things I like about [Shopify](https://shopify.com) is an internal tool called **Vault**.
@@ -26,14 +26,14 @@ design a framework, GSD (Get Shit Done), to plan work and build tools around it.
 
 The tool that you use to manage the project is an implementation detail of the developer or the team.
 You wanna use GitHub issues?
-Go ahead. 
+Go ahead.
 Do you prefer Trello instead?
 That's fine too.
 The focus is shifted from the tool to the actual project and what's trying to solve.
 I think this is the trap many organizations fall into: they get too distracted with the tools.
 
 A project is first **proposed**.
-Stakeholders ensure the problem or need is well defined, 
+Stakeholders ensure the problem or need is well defined,
 and that it's worth solving right now.
 This ensures people are working on the right things.
 If you can't relate your work to the organization's needs,

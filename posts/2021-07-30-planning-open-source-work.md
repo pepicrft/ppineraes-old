@@ -1,6 +1,6 @@
 ---
 title: Planning open-source work
-categories: ["open-source", "planning"]
+categories: ['open-source', 'planning']
 ---
 
 One of the things that I find the hardest when building open-source software is **planning the work**.
@@ -11,19 +11,18 @@ there are PRs to review, tickets to triage and prioritize, and questions that co
 Leaning mostly on the former is not great because users and contributors feel ignored,
 but focusing solely on the latter isn't good either because the project doesn't evolve.
 
-
 **What to do then?**
 I don't know.
 
 On [Tuist](https://tuist.io),
 when I think about what to work on,
 many things come to my mind:
-*there's a new website design to implement*,
-*some caching issues that we need to tackle*,
-*documentation improvements that I'd like to add*,
-*functionality that I'd like to start building onto TuistLab*...
+_there's a new website design to implement_,
+_some caching issues that we need to tackle_,
+_documentation improvements that I'd like to add_,
+_functionality that I'd like to start building onto TuistLab_...
 It's too much.
-I'd like to do everything, 
+I'd like to do everything,
 and I end up doing nothing.
 The mental overhead causes paralysis.
 Working on one thing leaves you wondering if you should be working on something else instead.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Flattery-driven open-source"
-categories: ["open-source", "tuist", "community"]
+title: 'Flattery-driven open-source'
+categories: ['open-source', 'tuist', 'community']
 ---
 
 With the society trending towards short-term wins and satisfaction,

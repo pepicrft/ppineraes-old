@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The role of flexibility in scaling up Xcode projects
-categories: ["tuist", "open source", "xcode", "swift"]
+categories: ['tuist', 'open source', 'xcode', 'swift']
 ---
 
 I often wonder why Apple continues to build features that are closed into Xcode,

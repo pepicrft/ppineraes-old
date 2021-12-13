@@ -9,7 +9,7 @@ const fetchPosts = () => {
 		.readdirSync('posts/**/*.md')
 		.reverse()
 		.map((postFilePath) => {
-			const components = postFilePath.split('/').slice(-1)[0].replace(".md", "").split("-");
+			const components = postFilePath.split('/').slice(-1)[0].replace('.md', '').split('-');
 			const metadata = fm(fs.readFileSync(postFilePath, 'utf8'));
 			const mdExcerpt = `${metadata.body.substring(0, 250)}...`;
 			const md = new MarkdownIt();
@@ -19,7 +19,7 @@ const fetchPosts = () => {
 			const year = components[0];
 			const month = components[1];
 			const day = components[2];
-			const name = components.slice(3).join("-");
+			const name = components.slice(3).join('-');
 			const slug = `/${year}/${month}/${day}/${name}`;
 			const formattedDate = `${day}-${month}-${year}`;
 			return {

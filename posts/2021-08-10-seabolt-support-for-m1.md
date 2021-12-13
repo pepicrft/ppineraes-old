@@ -1,11 +1,11 @@
 ---
 title: Seabolt support for M1
-categories: ["graph databases", "neo4j", "seabolt", "open source"]
+categories: ['graph databases', 'neo4j', 'seabolt', 'open source']
 ---
 
 As part of building **Chimera**,
 an AppleOS tool for capturing networked knowledge, thoughts, and ideas,
-I encountered an issue trying to set up [Neo4j](https://neo4j.com/developer/ruby/) on an M1 laptop *(i.e. arm64 architecture)*.
+I encountered an issue trying to set up [Neo4j](https://neo4j.com/developer/ruby/) on an M1 laptop _(i.e. arm64 architecture)_.
 It turns out that [Seabolt](https://github.com/neo4j-drivers/seabolt),
 the connector that [neo4j-ruby-driver](https://github.com/neo4jrb/neo4j-ruby-driver) uses to communicate with a running instance of Neo4j,
 doesn't have support for M1s.
@@ -34,7 +34,7 @@ The Neo4j Ruby driver should be able to initialize successfully.
 
 ### A note on Chimera
 
-It's the first time I mention Chimera, 
+It's the first time I mention Chimera,
 so you might be wondering what's that tool.
 You are probably familiar with tools for capturing networked notes like [Roam Research](https://roamresearch.com/) and [Obsidian](https://obsidian.md/).
 They are great because they remove the friction of giving your ideas, knowledge, and thoughts a structure other than the one they have in your brain.
@@ -47,6 +47,6 @@ and you usually have your phone with you,
 I think having an app optimized for native will take the experience of capturing them to a whole new level.
 So that's what I set out to build;
 a tool for **networked thoughts, ideas, and knowledge**.
-I'll focus on Apple platforms first, 
+I'll focus on Apple platforms first,
 following their [human interface guidelines](https://developer.apple.com/design/human-interface-guidelines/).
 I'm very excited to use [Tuist](https://tuist.io) myself and learn about [SwiftUI](https://developer.apple.com/xcode/swiftui/) to make this happen.

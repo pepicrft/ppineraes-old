@@ -1,6 +1,6 @@
 ---
 title: On not having focus
-categories: ["reflexion"]
+categories: ['reflexion']
 ---
 
 One of the things that I struggle a lot with these days is **focus**.

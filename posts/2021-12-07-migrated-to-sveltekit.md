@@ -1,12 +1,12 @@
 ---
-title: "Migrated to SvelteKit"
-categories: ["web", "svelte", "sveltekit"]
+title: 'Migrated to SvelteKit'
+categories: ['web', 'svelte', 'sveltekit']
 ---
 
 I migrated this blog to [SvelteKit](https://kit.svelte.dev/).
 I did it to consolidate everything I had learned about the framework,
 and be able to SSR static pages with dynamic content.
-For example, 
+For example,
 I'll be able to collect data from external sources like GitHub and include it in the [about](/about) page.
 
 I ported over the same boring design I had in the previous [Jekyll-based](https://jekyllrb.com/) website.
