@@ -7,7 +7,7 @@ const website = {
 	siteLanguage: 'en-US',
 	siteTitle: 'Craftweg',
 	siteShortTitle: 'Craftweg',
-	siteUrl: 'https://next.craftweg.com',
+	siteUrl: 'https://craftweg.com',
 	contactEmail: 'pedro@craftweg.com',
 	githubPage: 'https://github.com/craftweg',
 	linkedinProfile: 'pedro-piñera-buendia-9765a9125',
