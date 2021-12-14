@@ -26,22 +26,22 @@
 	export let title;
 	const defaultAlt = "Pedro's avatar";
 	export let featuredImage = {
-		url: `${siteUrl}/avatars/roboto-head.png`,
+		url: `${siteUrl}/avatars/avatar.png`,
 		alt: defaultAlt,
 		width: 580,
 		height: 580,
 		caption: 'Home page'
 	};
 	export let ogImage = {
-		url: `${siteUrl}/avatars/roboto-head.png`,
+		url: `${siteUrl}/avatars/avatar.png`,
 		alt: defaultAlt
 	};
 	export let ogSquareImage = {
-		url: `${siteUrl}/avatars/roboto-head.png`,
+		url: `${siteUrl}/avatars/avatar.png`,
 		alt: defaultAlt
 	};
 	export let twitterImage = {
-		url: `${siteUrl}/avatars/roboto-head.png`,
+		url: `${siteUrl}/avatars/avatar.png`,
 		alt: defaultAlt
 	};
 	const url = `${siteUrl}/${slug}`;
