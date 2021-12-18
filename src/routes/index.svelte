@@ -37,9 +37,10 @@
 	<h1>~/craftweg/src/</h1>
 	<p>Hola 👋.</p>
 	<p>
-		I'm <b>Pedro Piñera</b>. I'm a Staff Production Engineer at Shopify, and a open-source and
-		blockchain enthusiast. I enjoy devising and building developer tools that spark joy. Ruby 💎,
-		Swift 🐦, Rust 🦀, Typescript 🚀 are my day-to-day languages.
+		I'm <b>Pedro Piñera</b>. I'm a Staff Production Engineer at Shopify and a open-source
+		enthusiast. I fight for open, small, and human technology. I enjoy devising and building
+		developer tools that spark joy. Ruby 💎, Swift 🐦, Rust 🦀, Typescript 🚀 are my day-to-day
+		languages.
 	</p>
 	<p>
 		Join <a

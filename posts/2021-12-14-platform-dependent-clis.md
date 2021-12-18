@@ -4,7 +4,7 @@ categories: ['development', 'platforms', 'cli']
 ---
 
 I'm a firm believer that **shaping products as developer platforms is an amazing idea to let developers from all over the world make your product diverse**.
-Otherwise, 
+Otherwise,
 you have products like [Facebook](https://facebook.com) and [Apple](https://apple.com)'s that work great in California but conflict with the rest of the world,
 and what's worse, end up imposing a model that often becomes the source of serious problems.
 For example,
@@ -46,7 +46,7 @@ imagine Shopify providing a server-side [Storybook-like](https://storybook.js.or
 The dependency with the platform remains,
 but there's a platform-side dedicated tool to ensure the preview experience is the best.
 Storybook's stories concept would map so nicely.
-For example, 
+For example,
 we could provide different checkout scenarios that you can easily switch between without going through the checkout process.
 
 Another approach could be **taking platform functionality down to the client to simulate locally.**
