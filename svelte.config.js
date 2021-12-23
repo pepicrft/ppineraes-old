@@ -24,8 +24,6 @@ const config = {
 				'/about',
 				'/archive',
 				'/stack',
-				'/bookshelf',
-				'/micro-posts',
 				...fetchPosts().map((post) => post.slug)
 			]
 		}
