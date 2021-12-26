@@ -16,6 +16,8 @@
 
 <script lang="ts">
 	import Header from '$lib/components/SEO/index.svelte';
+	import { ScrollProgressBar } from 'svelte-scroll-progress-bar';
+
 	export let post = null;
 	let html = post?.html;
 	let slug = post?.slug;
@@ -24,6 +26,8 @@
 	let date = post?.date;
 	let timeToReadInMinutes = post?.timeToReadInMinutes;
 </script>
+
+<ScrollProgressBar color="DarkSlateBlue" />
 
 <Header
 	{slug}

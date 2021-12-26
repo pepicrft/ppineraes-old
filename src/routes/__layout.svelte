@@ -1,6 +1,5 @@
 <script>
 	import { page } from '$app/stores';
-	import Header from '$lib/components/SEO/index.svelte';
 </script>
 
 <svelte:head>
