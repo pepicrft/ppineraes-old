@@ -1,4 +1,4 @@
-![Header](/resources/header.png)
+# Craftweg
 
 [![Craftweg](https://github.com/craftweg/craftweg-next/actions/workflows/craftweg.yml/badge.svg)](https://github.com/craftweg/craftweg-next/actions/workflows/craftweg.yml)
 
