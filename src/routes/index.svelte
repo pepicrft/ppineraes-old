@@ -80,6 +80,11 @@
 		<ul>
 			<li><a href="mailto:pedro@craftweg.com" target="_blank">pedro@craftweg.com</a></li>
 		</ul>
+		<li>Support</li>
+		<ul>
+			<li><a href="https://www.patreon.com/pepicrft" target="_blank">Patreon</a></li>
+			<li><a href="https://github.com/sponsors/pepicrft" target="_blank">GitHub Sponsors</a></li>
+		</ul>
 		<li>On the internet</li>
 		<ul>
 			<li><a href="https://github.com/pepibumur" target="_blank">GitHub</a></li>
