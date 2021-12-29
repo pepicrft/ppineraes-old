@@ -90,6 +90,11 @@
 			<li><a href="https://github.com/pepibumur" target="_blank">GitHub</a></li>
 			<li><a href="https://gitlab.com/pepibumur" target="_blank">GitLab</a></li>
 			<li><a href="https://twitter.com/pepibumur" target="_blank">Twitter</a></li>
+			<li>
+				<a href="https://www.linkedin.com/in/pedro-pi%C3%B1era-buendia-9765a9125/" target="_blank"
+					>LinkedIn</a
+				>
+			</li>
 		</ul>
 	</ul>
 </main>
