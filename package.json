@@ -61,6 +61,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"svelte-obfuscate": "^0.3.0",
 		"svelte-scroll-progress-bar": "^0.3.0"
 	}
 }

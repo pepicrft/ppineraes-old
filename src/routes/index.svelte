@@ -22,6 +22,7 @@
 
 <script>
 	import Header from '$lib/components/SEO/index.svelte';
+	import { Obfuscate } from 'svelte-obfuscate';
 
 	export let posts = [];
 </script>
@@ -78,7 +79,7 @@
 		<li><a href="/feed.xml">RSS</a></li>
 		<li>Contact</li>
 		<ul>
-			<li><a href="mailto:pedro@craftweg.com" target="_blank">pedro@craftweg.com</a></li>
+			<li><Obfuscate email="pedro@craftweg.com" /></li>
 		</ul>
 		<li>Support</li>
 		<ul>
