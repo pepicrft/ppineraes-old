@@ -20,7 +20,8 @@ const config = {
 		},
 		prerender: {
 			enabled: true,
-			entries: ['/about', '/archive', '/stack', ...fetchPosts().map((post) => post.slug)]
+			entries: ['/about', '/archive', '/stack', ...fetchPosts().map((post) => post.slug)],
+			onError: "continue"
 		}
 	}
 };
