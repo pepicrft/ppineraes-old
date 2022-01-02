@@ -1,5 +1,6 @@
 <script context="module">
 	export const prerender = true;
+	export const router = false;
 
 	export async function load({ fetch, page: { path } }) {
 		const res = await fetch(`${path}.json`);
