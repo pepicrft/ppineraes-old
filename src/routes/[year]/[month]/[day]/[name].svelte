@@ -2,8 +2,8 @@
 	export const prerender = true;
 	export const router = false;
 
-	export async function load({ fetch, page: { path } }) {
-		const res = await fetch(`${path}.json`);
+	export async function load({ fetch, url }) {
+		const res = await fetch(`${url.pathname}.json`);
 		if (res?.ok) {
 			const response = await res?.json();
 			return {

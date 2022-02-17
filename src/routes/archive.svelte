@@ -1,7 +1,7 @@
 <script context="module">
 	export const prerender = true;
 
-	export async function load({ page, fetch, session, stuff }) {
+	export async function load({ fetch, session, stuff }) {
 		const url = `/posts.json`;
 		const res = await fetch(url);
 

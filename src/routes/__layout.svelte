@@ -30,7 +30,7 @@
 
 <main class="page-content" aria-label="Content">
 	<div class="wrapper">
-		{#if $page.path !== '/'}
+		{#if $page.url.pathname !== '/'}
 			<a href="/">Back</a>
 		{/if}
 		<slot />

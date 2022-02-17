@@ -1,7 +1,7 @@
 import posts from '../../../_posts';
 
 export async function get(req) {
-	const { path } = req;
+	const { pathname: path } = req.url;
 	const slug = path.replace('.json', '');
 	const post = posts.find((post) => post.slug === slug);
 	return {
