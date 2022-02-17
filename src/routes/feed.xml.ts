@@ -17,7 +17,7 @@ export const get: RequestHandler = async (request) => {
 const render = (posts) => `<feed xmlns="http://www.w3.org/2005/Atom">
 <link href="${website.siteUrl}/feed.xml" rel="self" type="application/atom+xml"/>
 <link href="${website.siteUrl}" rel="alternate" type="text/html"/>
-<updated>${posts.at(0).date}</updated>
+<updated>${posts[0].date}</updated>
 <id>${website.siteUrl}/feed.xml</id>
 <title type="html">Craftweg</title>
 <link>${website.siteUrl}</link>
