@@ -79,12 +79,7 @@
 		<li><a href="/feed.xml">RSS</a></li>
 		<li>Contact</li>
 		<ul>
-			<li><Obfuscate email="pedro@craftweg.com" /></li>
-		</ul>
-		<li>Support</li>
-		<ul>
-			<li><a href="https://www.patreon.com/pepicrft" target="_blank">Patreon</a></li>
-			<li><a href="https://github.com/sponsors/pepicrft" target="_blank">GitHub Sponsors</a></li>
+			<li><Obfuscate email="hola@craftweg.com" /></li>
 		</ul>
 		<li>On the internet</li>
 		<ul>
