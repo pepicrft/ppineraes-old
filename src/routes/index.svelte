@@ -74,7 +74,7 @@
 					>µfeatures architecture</a
 				>
 			</li>
-			<li><a href="https://github.com/backbone.sh">Backbone</a></li>
+			<li><a href="https://github.com/gestaltjs">GestaltJS</a></li>
 		</ul>
 		<li><a href="/feed.xml">RSS</a></li>
 		<li>Contact</li>
