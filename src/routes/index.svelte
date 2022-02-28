@@ -76,7 +76,7 @@
 			</li>
 			<li><a href="https://github.com/gestaltjs">GestaltJS</a></li>
 		</ul>
-		<li><a href="/feed.xml">RSS</a></li>
+		<li><a href="https://craftweg.com/feed.xml">RSS</a></li>
 		<li>Contact</li>
 		<ul>
 			<li><Obfuscate email="hola@craftweg.com" /></li>
