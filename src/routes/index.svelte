@@ -96,6 +96,9 @@
 					>LinkedIn</a
 				>
 			</li>
+			<li>
+				<a rel="me" href="https://fosstodon.org/@pepibumur">Mastodon</a>
+			</li>
 		</ul>
 	</ul>
 </main>
