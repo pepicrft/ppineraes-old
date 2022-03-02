@@ -92,7 +92,15 @@
 				>
 			</li>
 			<li>
-				<a rel="me" href="https://fosstodon.org/@pepibumur">Mastodon</a>
+				<a rel="me" href="https://fosstodon.org/web/@pepicrft">@pepicrft@fosstodon.org</a>
+			</li>
+			<li>
+				<a rel="me" href="https://mastodon.technology/web/@pepicrft"
+					>@pepicrft@mastodon.technology</a
+				>
+			</li>
+			<li>
+				<a rel="me" href="https://mastodon.social/web/@pepicrft">@pepicrft@mastodon.social</a>
 			</li>
 		</ul>
 	</ul>
