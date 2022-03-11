@@ -17,7 +17,7 @@ but rather,
 you work on an app.
 It's beautiful, and we'll take a lot of inspiration from it for GestaltJS.
 You build endpoints, some of which return data and some others UI.
-You don't need to deal with state or coordinate data loading and absolve all the complexity that comes with it.
+You don't need to deal with state or coordinate data loading and absorb all the complexity that comes with it.
 **It's all conceptually compressed**.
 The server is an implementation detail.
 
