@@ -1,5 +1,5 @@
 ---
-title: 'Conceptuall compression in web frameworks'
+title: 'Conceptual compression in web frameworks'
 categories: ['javascript', 'gestaltjs', 'open-source']
 ---
 
