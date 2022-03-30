@@ -38,27 +38,16 @@
 	<h1>~/craftweg/src/</h1>
 	<p>Hola 👋.</p>
 	<p>
-		I'm <b>Pedro Piñera</b>. I'm a Staff Production Engineer at Shopify and a open-source
-		enthusiast. I fight for open, small, and human technology. I enjoy devising and building
-		developer tools that spark joy. Ruby 💎, Swift 🐦, Rust 🦀, Typescript 🚀 are my day-to-day
+		I'm <a href="/about"><b>Pedro Piñera</b></a>. I'm a Staff Production Engineer at Shopify and a
+		open-source enthusiast. I fight for open, small, and human technology. I enjoy devising and
+		building developer tools that spark joy. Typescript 🚀, Ruby 💎, Rust 🦀 are my day-to-day
 		languages.
-	</p>
-	<p>
-		Join <a
-			href="https://join.slack.com/t/craftweg/shared_invite/zt-q1ab0kza-nFfA1pLCkafi3_cU85yIRQ"
-			target="_blank">Craftweg's Slack channel</a
-		> to say hi. Don't be shy!
 	</p>
 </header>
 
 <main>
 	<ul>
 		<li>Pages</li>
-		<ul>
-			<li><a href="/about">About</a></li>
-			<li><a href="/stack">Stack</a></li>
-			<li><a href="https://www.instapaper.com/p/6377648" target="_blank">Read later</a></li>
-		</ul>
 		<li>All posts</li>
 		<ul>
 			{#each posts as post}
@@ -68,13 +57,13 @@
 		</ul>
 		<li>Projects</li>
 		<ul>
-			<li><a href="https://tuist.io">tuist</a></li>
+			<li><a href="https://github.com/gestaltjs">Gestalt</a></li>
+			<li>Past: <a href="https://tuist.io">tuist</a></li>
 			<li>
-				<a href="https://docs.tuist.io/building-at-scale/microfeatures" target="_blank"
+				Past: <a href="https://docs.tuist.io/building-at-scale/microfeatures" target="_blank"
 					>µfeatures architecture</a
 				>
 			</li>
-			<li><a href="https://github.com/gestaltjs">GestaltJS</a></li>
 		</ul>
 		<li><a href="https://craftweg.com/feed.xml">RSS</a></li>
 		<li>Contact</li>
