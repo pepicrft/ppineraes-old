@@ -8,7 +8,7 @@
 		if (res.ok) {
 			return {
 				props: {
-					posts: (await res.json()).slice(0, 5)
+					posts: await res.json()
 				}
 			};
 		}
@@ -43,49 +43,29 @@
 		building developer tools that spark joy. Typescript 🚀, Ruby 💎, Rust 🦀 are my day-to-day
 		languages.
 	</p>
+	<p>
+		I devised and created <a href="https://tuist.io">Tuist</a> to help teams scale up Xcode
+		projects, proposed a modular architecture to build apps,
+		<a href="https://docs.tuist.io/building-at-scale/microfeatures" target="_blank"
+			>µfeatures architecture</a
+		>, and I'm now focused on building a framework for building apps with web technologies,
+		<a href="https://gestaltjs.org">Gestalt</a>.
+	</p>
+	<p>
+		Check out the <a href="/archive">archive</a> for past writings, and my
+		<a href="https://world.hey.com/pepicrft">hey world</a> for future ones (you can subscribe too).
+	</p>
+	<p>
+		You can conctact me via email <Obfuscate email="hola@craftweg.com" />, and find me on
+		<a href="https://github.com/pepibumur" target="_blank">GitHub</a>,
+		<a href="https://twitter.com/pepibumur" target="_blank">Twitter</a>, and
+		<a href="https://www.linkedin.com/in/pedro-pi%C3%B1era-buendia-9765a9125/" target="_blank"
+			>LinkedIn</a
+		>
+	</p>
 </header>
 
-<main>
-	<ul>
-		<li>Pages</li>
-		<li>All posts</li>
-		<ul>
-			{#each posts as post}
-				<li>{post.formattedDate} <a href={post.slug}>{post.title}</a></li>
-			{/each}
-			<li><a href="/archive">See archive...</a></li>
-		</ul>
-		<li>Projects</li>
-		<ul>
-			<li><a href="https://github.com/gestaltjs">Gestalt</a></li>
-			<li>Past: <a href="https://tuist.io">tuist</a></li>
-			<li>
-				Past: <a href="https://docs.tuist.io/building-at-scale/microfeatures" target="_blank"
-					>µfeatures architecture</a
-				>
-			</li>
-		</ul>
-		<li><a href="https://craftweg.com/feed.xml">RSS</a></li>
-		<li>Contact</li>
-		<ul>
-			<li><Obfuscate email="hola@craftweg.com" /></li>
-		</ul>
-		<li>On the internet</li>
-		<ul>
-			<li><a href="https://github.com/pepibumur" target="_blank">GitHub</a></li>
-			<li><a href="https://gitlab.com/pepibumur" target="_blank">GitLab</a></li>
-			<li><a href="https://twitter.com/pepibumur" target="_blank">Twitter</a></li>
-			<li>
-				<a href="https://www.linkedin.com/in/pedro-pi%C3%B1era-buendia-9765a9125/" target="_blank"
-					>LinkedIn</a
-				>
-			</li>
-			<li>
-				<a rel="me" href="https://mastodon.craftweg.com/web/@pedro">@pedro@mastodon.craftweg.com</a>
-			</li>
-		</ul>
-	</ul>
-</main>
+<main />
 
 <style lang="scss">
 	.avatar {
