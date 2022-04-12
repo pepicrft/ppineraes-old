@@ -57,8 +57,8 @@
 	</p>
 	<p>
 		You can conctact me via email <Obfuscate email="hola@craftweg.com" />, and find me on
-		<a href="https://github.com/pepibumur" target="_blank">GitHub</a>,
-		<a href="https://twitter.com/pepibumur" target="_blank">Twitter</a>, and
+		<a href="https://github.com/pepicrft" target="_blank">GitHub</a>,
+		<a href="https://twitter.com/pepicrft" target="_blank">Twitter</a>, and
 		<a href="https://www.linkedin.com/in/pedro-pi%C3%B1era-buendia-9765a9125/" target="_blank"
 			>LinkedIn</a
 		>
