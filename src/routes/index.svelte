@@ -48,8 +48,10 @@
 		projects, proposed a modular architecture to build apps,
 		<a href="https://docs.tuist.io/building-at-scale/microfeatures" target="_blank"
 			>µfeatures architecture</a
-		>, and I'm now focused on building a framework for building apps with web technologies,
-		<a href="https://gestaltjs.org">Gestalt</a>.
+		>. I'm now focused on building a framework for building apps with web technologies,
+		<a href="https://gestaltjs.org">Gestalt</a>, and
+		<a href="https://github.com/craftweg/devenv">devenv</a>, a Rust-based CLI tool to setup and
+		enable project-scoped environments.
 	</p>
 	<p>
 		Check out the <a href="/archive">archive</a> for past writings, and my
