@@ -56,6 +56,9 @@
 		<a href="http://omakase.craftweg.com/">Omakase blog</a> for future ones (you can subscribe too).
 	</p>
 	<p>
+		I have a profile on <a href="https://pixelfed.social/pepicrft" target="_blank">Fediverse</a> where I publish photos.
+  	</p
+	<p>
 		You can conctact me via email <Obfuscate email="hola@craftweg.com" />, and find me on
 		<a href="https://github.com/pepicrft" target="_blank">GitHub</a>,
 		<a href="https://twitter.com/pepicrft" target="_blank">Twitter</a>, and
