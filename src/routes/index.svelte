@@ -53,7 +53,7 @@
 	</p>
 	<p>
 		Check out the <a href="/archive">archive</a> for past writings, and my
-		<a href="https://world.hey.com/pepicrft">hey world</a> for future ones (you can subscribe too).
+		<a href="http://omakase.craftweg.com/">Omakase blog</a> for future ones (you can subscribe too).
 	</p>
 	<p>
 		You can conctact me via email <Obfuscate email="hola@craftweg.com" />, and find me on
