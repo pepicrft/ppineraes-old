@@ -55,7 +55,7 @@
 		I sporadically dump my brain's chaos into <a href="/archive">blog posts</a>.
 	</p>
 	<p>
-		I have a profile on <a href="https://pixelfed.social/pepicrft" target="_blank">Fediverse</a> where
+		I have a profile on <a href="https://pixelfed.social/pepicrft" target="_blank">Pixelfed</a> where
 		I publish photos.
 	</p>
 	<p>
