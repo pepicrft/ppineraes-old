@@ -19,7 +19,7 @@ const render = (posts) => `<feed xmlns="http://www.w3.org/2005/Atom">
 <link href="${website.siteUrl}" rel="alternate" type="text/html"/>
 <updated>${posts[0].date}</updated>
 <id>${website.siteUrl}/feed.xml</id>
-<title type="html">Craftweg</title>
+<title type="html">Pedro Piñera</title>
 <link>${website.siteUrl}</link>
 <subtitle>${website.description}</subtitle>
 

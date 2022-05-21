@@ -29,13 +29,13 @@
 
 <Header
 	slug="/"
-	title="Pedro Piñera's corner on the Internet"
-	metadescription="Craftweg is my life-project towards making building software a craft. Is this tiny corner in the Internet, I share my experiences, adventures, ideas, and thoughts."
+	title="Pedro Piñera's corner in the Internet"
+	metadescription="This my tiny corner in the Internet, I share my experiences, adventures, ideas, and thoughts."
 />
 
 <header>
 	<img src="/avatars/avatar.png" class="avatar" />
-	<h1>~/craftweg/src/</h1>
+	<h1>~/pedro-piñera/src/</h1>
 	<p>Hola 👋.</p>
 	<p>
 		I'm <a href="/about"><b>Pedro Piñera</b></a>. I'm a Staff Production Engineer at Shopify and a
@@ -52,12 +52,12 @@
 		<a href="https://gestaltjs.org">Gestalt</a>.
 	</p>
 	<p>
-		Check out the <a href="/archive">archive</a> for past writings, and my
-		<a href="http://omakase.craftweg.com/">Omakase blog</a> for future ones (you can subscribe too).
+		I sporadically dump my brain's chaos into <a href="/archive">blog posts</a>.
 	</p>
 	<p>
-		I have a profile on <a href="https://pixelfed.social/pepicrft" target="_blank">Fediverse</a> where I publish photos.
-  	</p>
+		I have a profile on <a href="https://pixelfed.social/pepicrft" target="_blank">Fediverse</a> where
+		I publish photos.
+	</p>
 	<p>
 		You can conctact me via email <Obfuscate email="hola@craftweg.com" />, and find me on
 		<a href="https://github.com/pepicrft" target="_blank">GitHub</a>,

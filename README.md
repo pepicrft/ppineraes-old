@@ -1,6 +1,4 @@
-# Craftweg
-
-[![Craftweg](https://github.com/craftweg/craftweg-next/actions/workflows/craftweg.yml/badge.svg)](https://github.com/craftweg/craftweg-next/actions/workflows/craftweg.yml)
+# ppinera.es
 
 Personal website built with SvelteKit
 
